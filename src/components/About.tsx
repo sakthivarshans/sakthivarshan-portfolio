@@ -13,7 +13,7 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in">
             <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-              Computer Science sophomore with hands-on experience in AI, IoT, Robotics, and Web Development. 
+              Computer Science Pre-Final Year Student with hands-on experience in AI, IoT, Robotics, and Web Development. 
               Skilled in machine learning, embedded systems, automation, and real-time processing with a passion 
               for creating innovative solutions that bridge the gap between theoretical knowledge and practical applications.
             </p>

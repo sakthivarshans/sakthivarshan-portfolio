@@ -4,7 +4,7 @@ export const projectsData = [
     title: "DeepStreaming Project",
     description: "Advanced deep learning project for real-time video streaming and analysis using computer vision techniques.",
     fullDescription: "This project implements a comprehensive deep learning solution for real-time video streaming with advanced analytics. It combines computer vision, machine learning, and streaming technologies to provide intelligent video processing capabilities.",
-    image: "/lovable-uploads/3a0412d4-5118-43d8-8060-837e2c3c26da.png",
+    image: "/lovable-uploads/e3d57859-5ab0-409d-9f55-9b76e889a798.png",
     technologies: ["Python", "TensorFlow", "OpenCV", "Flask", "CUDA", "Docker"],
     category: "AI/ML",
     features: [
@@ -33,7 +33,7 @@ export const projectsData = [
     title: "IMDb Movie Prediction",
     description: "Machine learning model to predict movie ratings and success based on various features using advanced data analysis.",
     fullDescription: "A comprehensive machine learning project that analyzes movie data from IMDb to predict ratings, box office success, and audience reception. The project uses various ML algorithms and feature engineering techniques to achieve high prediction accuracy.",
-    image: "/lovable-uploads/9a42723e-4b2b-435e-963d-132ae01591d0.png",
+    image: "/lovable-uploads/f6c720a3-6610-44db-9212-986056172aa0.png",
     technologies: ["Python", "Pandas", "Scikit-Learn", "Matplotlib", "NumPy", "Seaborn"],
     category: "Data Science",
     features: [
