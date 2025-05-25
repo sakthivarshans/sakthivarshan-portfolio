@@ -61,7 +61,7 @@ const ProjectEnquiry = () => {
       
       toast({
         title: "Enquiry Sent!",
-        description: "Thank you for your project enquiry. I'll get back to you soon with my resume!",
+        description: "Thank you for your project enquiry. I'll get back to you soon!",
       });
       
       setFormData({
@@ -281,12 +281,6 @@ const ProjectEnquiry = () => {
                   ))}
                 </div>
               )}
-            </div>
-
-            <div className="bg-purple-900/30 p-4 rounded-lg border border-purple-500/30">
-              <p className="text-purple-200 text-sm">
-                📄 <strong>Resume Delivery:</strong> Once you submit this form, I'll automatically send you my resume along with my response to your enquiry.
-              </p>
             </div>
 
             <button
