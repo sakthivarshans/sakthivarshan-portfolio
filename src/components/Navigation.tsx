@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -43,7 +44,7 @@ const Navigation = () => {
                 href={item.href}
                 className="text-zinc-300 hover:text-orange-500 transition-colors duration-300 relative group"
               >
-                {item.label}
+                {item.name}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
@@ -71,7 +72,7 @@ const Navigation = () => {
                   className="block px-3 py-2 text-zinc-300 hover:text-orange-500 transition-colors duration-300"
                   onClick={() => setIsOpen(false)}
                 >
-                  {item.label}
+                  {item.name}
                 </a>
               ))}
             </div>
