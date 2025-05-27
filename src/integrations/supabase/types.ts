@@ -36,6 +36,48 @@ export type Database = {
         }
         Relationships: []
       }
+      project_enquiries: {
+        Row: {
+          created_at: string
+          design_idea: string | null
+          email: string
+          files: string[] | null
+          id: string
+          mobile: string
+          name: string
+          project_description: string
+          project_field: string
+          project_name: string
+          subject: string
+        }
+        Insert: {
+          created_at?: string
+          design_idea?: string | null
+          email: string
+          files?: string[] | null
+          id?: string
+          mobile: string
+          name: string
+          project_description: string
+          project_field: string
+          project_name: string
+          subject: string
+        }
+        Update: {
+          created_at?: string
+          design_idea?: string | null
+          email?: string
+          files?: string[] | null
+          id?: string
+          mobile?: string
+          name?: string
+          project_description?: string
+          project_field?: string
+          project_name?: string
+          subject?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never

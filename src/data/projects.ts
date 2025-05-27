@@ -173,5 +173,39 @@ export const projectsData = [
       "Improved code quality and reliability",
       "Increased accessibility for developers"
     ]
+  },
+  {
+    title: "Soil Classification and Prediction",
+    description: "An AI-powered soil analysis system that predicts soil type from photo samples and provides agricultural recommendations for optimal crop growth.",
+    fullDescription: "An intelligent soil classification and prediction system that uses deep learning to analyze soil photo samples and detect soil types through comprehensive analysis. After analyzing the soil, the AI model provides valuable insights including precautionary measures, best plants that grow in that specific soil type, and detailed recommendations on how to make the soil more fertile and suitable for agriculture.",
+    image: "/lovable-uploads/a19b742e-497b-4b0c-85b9-3429f8840705.png",
+    technologies: ["Python", "TensorFlow", "Computer Vision", "Deep Learning", "Image Processing", "Agricultural AI"],
+    category: "AI/ML",
+    features: [
+      "Soil type detection from photo samples",
+      "Deep learning-based soil analysis",
+      "Plant recommendation system based on soil type",
+      "Soil fertility enhancement suggestions",
+      "Precautionary measures and care instructions",
+      "Agricultural optimization through AI insights",
+      "Real-time image processing and classification",
+      "Comprehensive soil health assessment"
+    ],
+    challenges: [
+      "Accurate soil classification from visual data",
+      "Training models on diverse soil samples",
+      "Handling varying lighting and image conditions",
+      "Creating comprehensive agricultural databases",
+      "Ensuring accuracy across different geographical regions",
+      "Integrating agricultural expertise with AI predictions"
+    ],
+    outcomes: [
+      "Achieved high accuracy in soil type classification",
+      "Enhanced agricultural decision-making process",
+      "Improved crop yield through optimal soil management",
+      "Successful integration of AI with agricultural practices",
+      "Increased farming efficiency and productivity",
+      "Better soil health monitoring and management"
+    ]
   }
 ];
