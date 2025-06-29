@@ -2,6 +2,12 @@
 const Experience = () => {
   const experiences = [
     {
+      title: "Intel Unnati Industry Trainee",
+      company: "Intel Corporation",
+      period: "Feb–Mar 2025",
+      description: "Developed and deployed an AI-based bug detection model at Intel, identifying software bugs and enhancing reliability in real-world applications.",
+    },
+    {
       title: "AI Intern",
       company: "Internship Studio",
       period: "Jul–Aug 2024",
