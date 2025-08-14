@@ -2,6 +2,12 @@
 const Experience = () => {
   const experiences = [
     {
+      title: "Vice President",
+      company: "Code Craft Club",
+      period: "Aug 2025–Present",
+      description: "As Vice President of the Code Craft Club, I led a vibrant community of innovators passionate about IoT, embedded systems, 3D modeling, and web development. I organized and conducted hands-on training sessions, mentoring juniors in hardware design, embedded programming, and system integration. I coordinated team projects from concept to completion, encouraged creative problem solving, and fostered a collaborative environment that inspired members to push their technical boundaries. Through this role, I combined leadership with technical expertise, helping transform ideas into real-world solutions.",
+    },
+    {
       title: "Intel Unnati Industry Trainee",
       company: "Intel Corporation",
       period: "Feb–Mar 2025",
