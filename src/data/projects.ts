@@ -207,5 +207,101 @@ export const projectsData = [
       "Increased farming efficiency and productivity",
       "Better soil health monitoring and management"
     ]
+  },
+  {
+    title: "Ground Penetrating Radar Rover",
+    description: "Autonomous Subsurface Detection and Mapping System capable of detecting underground elements such as water, buried objects, metals, and soil layers.",
+    fullDescription: "This project focuses on developing an autonomous rover equipped with Ground Penetrating Radar (GPR) capable of detecting underground elements such as water, buried objects, metals, and soil layers. The system is designed to be cost efficient, portable, and user friendly, featuring a smart dashboard interface for real time visualization of subsurface data. Unlike conventional manual GPR devices, this rover operates autonomously, scanning large areas with precision and delivering accurate readings for applications in agriculture, geology, and underground utility detection.",
+    image: "/lovable-uploads/gpr-rover.jpg",
+    technologies: ["Arduino", "Raspberry Pi", "GPR Technology", "Autonomous Navigation", "Data Visualization", "IoT"],
+    category: "Robotics",
+    features: [
+      "Autonomous subsurface scanning and mapping",
+      "Ground Penetrating Radar (GPR) integration",
+      "Real-time data visualization dashboard",
+      "Detection of water, metals, and buried objects",
+      "Soil layer analysis capabilities",
+      "Cost-efficient and portable design",
+      "Large-area autonomous scanning",
+      "Applications in agriculture and geology"
+    ],
+    challenges: [
+      "Integrating GPR technology with autonomous navigation",
+      "Developing accurate subsurface detection algorithms",
+      "Creating intuitive real-time visualization interface",
+      "Ensuring precision in large-area scanning",
+      "Optimizing cost while maintaining performance",
+      "Processing and interpreting GPR data in real-time"
+    ],
+    outcomes: [
+      "Enhanced subsurface detection capabilities",
+      "Improved efficiency in underground utility detection",
+      "Successful autonomous operation implementation",
+      "Cost-effective alternative to manual GPR devices"
+    ]
+  },
+  {
+    title: "Contactless Charging System",
+    description: "Wireless Power Transfer Using Magnetic Levitation and Electromagnetic Induction for seamless energy transfer over distance.",
+    fullDescription: "This project introduces an advanced form of wireless charging that eliminates the need for physical contact. By combining magnetic levitation and Wireless Transfer Power (WTP) using electromagnetic induction, it enables seamless energy transfer over distance. The system is primarily aimed at electric vehicles (EVs), allowing them to charge continuously even while in motion, extending travel range and efficiency. This innovation pushes the boundaries of current wireless charging systems and opens new pathways for sustainable transportation technology.",
+    image: "/lovable-uploads/contactless-charging.jpg",
+    technologies: ["Electromagnetic Induction", "Magnetic Levitation", "Power Electronics", "EV Technology", "Wireless Power Transfer", "Circuit Design"],
+    category: "Hardware Design",
+    features: [
+      "Contactless wireless power transfer",
+      "Magnetic levitation integration",
+      "Electromagnetic induction technology",
+      "Charging while in motion capability",
+      "Extended EV travel range",
+      "No physical contact required",
+      "Sustainable transportation solution",
+      "Continuous charging system"
+    ],
+    challenges: [
+      "Achieving efficient power transfer over distance",
+      "Implementing stable magnetic levitation",
+      "Managing power losses in wireless transfer",
+      "Ensuring safety and reliability",
+      "Optimizing charging efficiency while in motion",
+      "Integrating with existing EV infrastructure"
+    ],
+    outcomes: [
+      "Revolutionary wireless charging solution",
+      "Extended EV range through continuous charging",
+      "Advanced sustainable transportation technology",
+      "Eliminated physical charging limitations"
+    ]
+  },
+  {
+    title: "Solid-State Li-ion Battery",
+    description: "High-Density, Safe, and Efficient Energy Storage for Electric Vehicles with greater capacity and enhanced safety compared to traditional batteries.",
+    fullDescription: "This project focuses on building a solid state lithium-ion battery that provides greater energy storage capacity and enhanced safety compared to traditional liquid-electrolyte batteries. By leveraging solid electrolytes and optimized material engineering, this design aims to deliver higher energy density, faster charging, and longer lifespan. The primary goal is to make EV batteries more compact, durable, and capable of powering longer-distance travel – marking a key step toward next-generation electric mobility.",
+    image: "/lovable-uploads/battery-project.jpg",
+    technologies: ["Material Engineering", "Solid-State Technology", "Battery Chemistry", "Energy Storage", "EV Technology", "Electrochemistry"],
+    category: "Hardware Design",
+    features: [
+      "Solid-state lithium-ion technology",
+      "Higher energy density storage",
+      "Enhanced safety compared to liquid-electrolyte",
+      "Faster charging capabilities",
+      "Longer battery lifespan",
+      "Compact and durable design",
+      "Optimized material engineering",
+      "Extended EV travel range"
+    ],
+    challenges: [
+      "Developing stable solid electrolyte materials",
+      "Optimizing energy density and performance",
+      "Ensuring manufacturing scalability",
+      "Managing thermal characteristics",
+      "Reducing production costs",
+      "Maintaining long-term durability and safety"
+    ],
+    outcomes: [
+      "Next-generation energy storage solution",
+      "Enhanced EV battery safety and efficiency",
+      "Increased energy density and lifespan",
+      "Advanced electric mobility capabilities"
+    ]
   }
 ];
