@@ -75,7 +75,7 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-orange-500/20 rounded-full blur-2xl"></div>
               <img
-                src="/lovable-uploads/b46abbd1-5cec-49c6-9056-8866bb924b00.png"
+                src="/lovable-uploads/profile-picture.jpg"
                 alt="Sakthivarshan S"
                 className="relative w-80 h-80 lg:w-96 lg:h-96 object-cover rounded-full shadow-2xl border-4 border-orange-500/30 hover:scale-105 transition-transform duration-500"
               />

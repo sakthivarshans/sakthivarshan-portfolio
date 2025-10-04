@@ -36,16 +36,16 @@ const Skills = () => {
       color: "bg-purple-500",
     },
     {
-      title: "IoT & Embedded",
+      title: "IoT & Embedded Systems",
       skills: [
         "Arduino", 
         "Raspberry Pi", 
-        "Jetson Kit", 
+        "Jetson Nano", 
         "RTOS", 
-        "Sensor Integration", 
-        "Node Red", 
-        "Blynk", 
-        "Google IoT Cloud"
+        "Sensor Calibration", 
+        "Communication Protocols (CAN, I2C, SPI, UART, Ethernet)", 
+        "Hardware-in-the-Loop (HiL)", 
+        "Software-in-the-Loop (SiL)"
       ],
       color: "bg-orange-500",
     },
