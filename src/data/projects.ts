@@ -1,5 +1,37 @@
-
 export const projectsData = [
+  {
+    title: "BlinkWall - Ephemeral Message Board",
+    description: "A full-stack MERN social application designed as an exclusive note-sharing platform for the Karunya University community with secure Google OAuth 2.0 authentication.",
+    fullDescription: "BlinkWall is a full-stack MERN (MongoDB, Express, React, Node.js) social application built from scratch as an exclusive note-sharing platform for the Karunya University community. By leveraging a custom Google OAuth 2.0 strategy with Passport.js, it ensures that only users with a valid @karunya.edu.in (student) or @karunya.edu (faculty) email can sign up. The app delivers a secure, performant, and modern web application that manages user authentication, profile onboarding, and real-time CRUD operations for short-form notes called 'Blinks'.",
+    image: "/lovable-uploads/blinkwall-project.png",
+    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Passport.js", "Google OAuth 2.0", "Framer Motion", "Bootstrap", "Axios", "Mongoose"],
+    category: "Full-Stack Development",
+    features: [
+      "Dual-Domain Google OAuth 2.0 for secure login restricted to specific email domains",
+      "Mandatory profile onboarding after first login",
+      "Full-Stack CRUD operations for creating, reading, and deleting notes",
+      "Note categorization as 'Featured', 'Events', or 'For You' with filterable feed",
+      "Modern, responsive dark-theme UI with glassmorphism effects",
+      "Framer Motion animations for scroll-in, delete, and logout/login screens",
+      "Custom modals and error pages for enhanced user experience",
+      "Stateful session management using express-session",
+      "Protected routes with multi-stage authentication flow"
+    ],
+    challenges: [
+      "Implementing custom Passport.js strategy to validate users from two different domains (@karunya.edu.in and @karunya.edu)",
+      "Managing hybrid deployment with stateful Node.js backend on Render and React frontend on Vercel",
+      "Engineering multi-stage authentication flow (Login -> Profile Onboarding -> Main App) and securing all API endpoints",
+      "Configuring CORS, withCredentials, and secure cookies between two different live domains (Vercel and Render)",
+      "Managing stateful backend sessions on modern platforms like Render"
+    ],
+    outcomes: [
+      "A fully functional, secure, and deployed full-stack web application",
+      "Successfully managed stateful backend on Render with persistent user sessions",
+      "Highly responsive and engaging UI with complex animations deployed globally via Vercel",
+      "Complete CI/CD pipeline implementation from GitHub repository",
+      "Secure authentication system with domain-restricted access"
+    ]
+  },
   {
     title: "Deepstreaming Using Jetson Nano",
     description: "Implemented a computer vision project using DeepStream on Jetson Nano, optimizing real-time video analytics.",
