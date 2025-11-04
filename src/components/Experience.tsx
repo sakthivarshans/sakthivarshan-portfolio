@@ -11,31 +11,31 @@ const Experience = () => {
       title: "Intel Unnati Industry Trainee",
       company: "Intel Corporation",
       period: "Feb–Mar 2025",
-      description: "Developed and deployed an AI-based bug detection model at Intel, identifying software bugs and enhancing reliability in real-world applications.",
+      description: "An AI-based bug detection model improves software reliability by automatically scanning code to find bugs and vulnerabilities. It uses machine learning to detect complex errors early in development, reducing false positives and speeding up fixes. The model predicts high-risk areas, helping developers focus testing efforts efficiently. By automating routine debugging tasks, it enhances developer productivity and results in higher-quality, more robust software applications.",
     },
     {
       title: "AI Intern",
       company: "Internship Studio",
       period: "Jul–Aug 2024",
-      description: "Real-time video analysis using Python and OpenCV.",
+      description: "A real-time video analysis project was developed during an internship using Python and OpenCV to process live video streams efficiently. The system captures video frames from a camera or video source and applies image processing techniques to extract actionable insights, such as object detection and motion tracking. By processing frames in real-time, the project enables immediate feedback and interaction suited for surveillance, automation, or user-interface applications.",
     },
     {
       title: "AI Intern",
       company: "Ediglobe Services",
       period: "Jun–Aug 2024",
-      description: "Medical AI using TensorFlow, improved diagnostic accuracy.",
+      description: "A Medical AI project was undertaken to improve diagnostic accuracy using TensorFlow. The model was trained on medical imaging data to assist healthcare professionals in identifying diseases more reliably and quickly. By leveraging deep learning techniques, the system enhanced the precision of diagnoses and reduced human error. TensorFlow's powerful framework enabled efficient model development and deployment in clinical settings. This AI-driven approach contributes to better patient outcomes through timely and accurate medical analysis.",
     },
     {
       title: "Cybersecurity Intern",
       company: "Cisco Networking",
       period: "May–Jul 2024",
-      description: "Hands-on with firewalls, threat detection via Packet Tracer.",
+      description: "A hands-on project was conducted using Packet Tracer to work with firewalls and threat detection. The project involved configuring firewall rules to control network traffic and prevent unauthorized access. It demonstrated real-time monitoring and identification of potential security threats within a simulated network environment. Through practical exercises, skills in network security and intrusion detection were enhanced.",
     },
     {
       title: "Robotics Intern",
       company: "Kodacy",
       period: "Dec 2023",
-      description: "Arduino-based automation, embedded hardware optimization.",
+      description: "An Arduino-based automation project was completed during a robotics internship focusing on optimizing embedded hardware. It involved programming microcontrollers to automate tasks efficiently while improving hardware performance and power usage. This hands-on work enhanced skills in embedded systems and real-time control for robotic applications.",
     },
   ];
 
