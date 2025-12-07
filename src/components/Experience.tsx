@@ -1,88 +1,115 @@
+import { ArrowUpRight } from "lucide-react";
 
 const Experience = () => {
   const experiences = [
     {
       title: "Vice President",
       company: "Code Craft Club",
-      period: "Aug 2025–Present",
-      description: "As Vice President of the Code Craft Club, I led a vibrant community of innovators passionate about IoT, embedded systems, 3D modeling, and web development. I organized and conducted hands-on training sessions, mentoring juniors in hardware design, embedded programming, and system integration. I coordinated team projects from concept to completion, encouraged creative problem solving, and fostered a collaborative environment that inspired members to push their technical boundaries. Through this role, I combined leadership with technical expertise, helping transform ideas into real-world solutions.",
+      location: "Karunya University",
+      period: "Aug 2025 – Present",
+      description: "Leading a community of innovators passionate about IoT, embedded systems, 3D modeling, and web development. Organizing hands-on training sessions and mentoring juniors in hardware design and system integration.",
+      tags: ["Leadership", "IoT"],
     },
     {
       title: "Intel Unnati Industry Trainee",
       company: "Intel Corporation",
-      period: "Feb–Mar 2025",
-      description: "An AI-based bug detection model improves software reliability by automatically scanning code to find bugs and vulnerabilities. It uses machine learning to detect complex errors early in development, reducing false positives and speeding up fixes. The model predicts high-risk areas, helping developers focus testing efforts efficiently. By automating routine debugging tasks, it enhances developer productivity and results in higher-quality, more robust software applications.",
+      location: "Industry Training",
+      period: "Feb – Mar 2025",
+      description: "Developed AI-based bug detection model improving software reliability by automatically scanning code to find bugs and vulnerabilities using machine learning.",
+      tags: ["AI/ML", "Bug Detection"],
     },
     {
       title: "AI Intern",
       company: "Internship Studio",
-      period: "Jul–Aug 2024",
-      description: "A real-time video analysis project was developed during an internship using Python and OpenCV to process live video streams efficiently. The system captures video frames from a camera or video source and applies image processing techniques to extract actionable insights, such as object detection and motion tracking. By processing frames in real-time, the project enables immediate feedback and interaction suited for surveillance, automation, or user-interface applications.",
+      location: "Remote",
+      period: "Jul – Aug 2024",
+      description: "Developed real-time video analysis project using Python and OpenCV to process live video streams with object detection and motion tracking.",
+      tags: ["Python", "OpenCV"],
     },
     {
       title: "AI Intern",
       company: "Ediglobe Services",
-      period: "Jun–Aug 2024",
-      description: "A Medical AI project was undertaken to improve diagnostic accuracy using TensorFlow. The model was trained on medical imaging data to assist healthcare professionals in identifying diseases more reliably and quickly. By leveraging deep learning techniques, the system enhanced the precision of diagnoses and reduced human error. TensorFlow's powerful framework enabled efficient model development and deployment in clinical settings. This AI-driven approach contributes to better patient outcomes through timely and accurate medical analysis.",
+      location: "Remote",
+      period: "Jun – Aug 2024",
+      description: "Built Medical AI project using TensorFlow to improve diagnostic accuracy, training models on medical imaging data to assist healthcare professionals.",
+      tags: ["TensorFlow", "Medical AI"],
     },
     {
       title: "Cybersecurity Intern",
       company: "Cisco Networking",
-      period: "May–Jul 2024",
-      description: "A hands-on project was conducted using Packet Tracer to work with firewalls and threat detection. The project involved configuring firewall rules to control network traffic and prevent unauthorized access. It demonstrated real-time monitoring and identification of potential security threats within a simulated network environment. Through practical exercises, skills in network security and intrusion detection were enhanced.",
+      location: "Virtual",
+      period: "May – Jul 2024",
+      description: "Hands-on project using Packet Tracer for firewalls and threat detection, configuring firewall rules and real-time security monitoring.",
+      tags: ["Security", "Networking"],
     },
     {
       title: "Robotics Intern",
       company: "Kodacy",
+      location: "On-site",
       period: "Dec 2023",
-      description: "An Arduino-based automation project was completed during a robotics internship focusing on optimizing embedded hardware. It involved programming microcontrollers to automate tasks efficiently while improving hardware performance and power usage. This hands-on work enhanced skills in embedded systems and real-time control for robotic applications.",
+      description: "Arduino-based automation project focusing on optimizing embedded hardware, programming microcontrollers for efficient task automation.",
+      tags: ["Arduino", "Robotics"],
     },
   ];
 
   return (
-    <section id="experience" className="py-20 bg-zinc-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            Work <span className="text-orange-500">Experience</span>
-          </h2>
-          <div className="w-24 h-1 bg-orange-500 mx-auto"></div>
+    <section id="experience" className="py-24 lg:py-32 bg-background">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        {/* Header */}
+        <div className="grid lg:grid-cols-2 gap-8 mb-16">
+          <div className="animate-fade-in-up">
+            <div className="flex items-center gap-2 mb-4">
+              <div className="w-2 h-2 bg-foreground rounded-full"></div>
+              <span className="text-sm text-muted-foreground uppercase tracking-wider">Experiences</span>
+            </div>
+            <h2 className="font-display text-4xl lg:text-5xl font-medium text-foreground">
+              Explore My<br />Design Journey
+            </h2>
+          </div>
+          <div className="flex flex-col justify-end animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+            <p className="text-muted-foreground mb-4">
+              Over the past 4+ years, I've had the opportunity to work on a wide range of projects, 
+              collaborating with diverse teams and clients to bring creative visions to life.
+            </p>
+            <a href="#contact" className="inline-flex items-center gap-2 text-foreground font-medium hover:gap-3 transition-all">
+              Book A Call <ArrowUpRight size={16} />
+            </a>
+          </div>
         </div>
 
-        <div className="relative">
-          {/* Timeline Line */}
-          <div className="absolute left-4 lg:left-1/2 transform lg:-translate-x-1/2 w-0.5 h-full bg-orange-500"></div>
-
-          <div className="space-y-12">
-            {experiences.map((exp, index) => (
-              <div
-                key={index}
-                className={`relative flex items-center ${
-                  index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
-                } animate-fade-in`}
-                style={{ animationDelay: `${index * 0.2}s` }}
-              >
-                {/* Timeline Dot */}
-                <div className="absolute left-4 lg:left-1/2 transform lg:-translate-x-1/2 w-4 h-4 bg-orange-500 rounded-full border-4 border-zinc-900"></div>
-
-                {/* Content */}
-                <div className={`ml-12 lg:ml-0 lg:w-1/2 ${index % 2 === 0 ? "lg:pr-12" : "lg:pl-12"}`}>
-                  <div className="bg-zinc-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
-                    <div className="flex justify-between items-start mb-4">
-                      <div>
-                        <h3 className="text-xl font-bold text-white">{exp.title}</h3>
-                        <p className="text-orange-400 font-semibold">{exp.company}</p>
-                      </div>
-                      <span className="text-sm text-zinc-400 bg-zinc-700 px-3 py-1 rounded-full">
-                        {exp.period}
-                      </span>
-                    </div>
-                    <p className="text-zinc-300">{exp.description}</p>
-                  </div>
+        {/* Experience List */}
+        <div className="space-y-0 border-t border-border">
+          {experiences.map((exp, index) => (
+            <div
+              key={index}
+              className="py-8 border-b border-border group hover:bg-tertiary/50 transition-colors duration-300 animate-fade-in-up"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <div className="grid lg:grid-cols-12 gap-6 items-start">
+                <div className="lg:col-span-4">
+                  <h3 className="text-lg font-semibold text-foreground group-hover:text-foreground transition-colors">
+                    {exp.company}, {exp.location}
+                  </h3>
+                  <p className="text-sm text-muted-foreground mt-1">• {exp.period}</p>
+                </div>
+                <div className="lg:col-span-5">
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    {exp.title}. {exp.description}
+                  </p>
+                </div>
+                <div className="lg:col-span-3 flex flex-wrap gap-2 justify-start lg:justify-end">
+                  {exp.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="px-4 py-1.5 bg-tertiary text-foreground text-xs rounded-full border border-border"
+                    >
+                      {tag}
+                    </span>
+                  ))}
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

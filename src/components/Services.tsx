@@ -1,64 +1,78 @@
+import { ArrowUpRight } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
+      number: "01",
       title: "Wix Website Design & Development",
       description: "Professional website creation using Wix platform with custom designs and functionality.",
-      icon: "🌐",
     },
     {
+      number: "02",
       title: "UI/UX Design & Canva Branding",
       description: "Creative design solutions for digital products and brand identity development.",
-      icon: "🎨",
     },
     {
+      number: "03",
       title: "AI/ML/DL Project Guidance",
       description: "Expert consultation and guidance for AI/ML projects. Successfully guided 10+ people.",
-      icon: "🤖",
     },
     {
+      number: "04",
       title: "IoT & Embedded Systems Projects",
       description: "Complete IoT solutions and embedded systems development. Guided 30+ students.",
-      icon: "⚡",
     },
   ];
 
   return (
-    <section id="services" className="py-20 bg-zinc-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            My <span className="text-orange-500">Services</span>
+    <section id="services" className="py-24 lg:py-32 bg-background">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        {/* Header */}
+        <div className="text-center mb-16 animate-fade-in-up">
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <div className="w-2 h-2 bg-foreground rounded-full"></div>
+            <span className="text-sm text-muted-foreground uppercase tracking-wider">What I Do</span>
+          </div>
+          <h2 className="font-display text-4xl lg:text-5xl font-medium text-foreground mb-4">
+            My Services
           </h2>
-          <div className="w-24 h-1 bg-orange-500 mx-auto"></div>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Offering expert solutions across web development, design, and technical mentorship
+          </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        {/* Services Grid */}
+        <div className="grid md:grid-cols-2 gap-6 mb-12">
           {services.map((service, index) => (
             <div
               key={service.title}
-              className="group bg-zinc-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:bg-zinc-700 animate-fade-in"
+              className="group bg-tertiary p-8 rounded-2xl hover-lift animate-fade-in-up border border-border hover:border-foreground transition-colors duration-300"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                {service.icon}
+              <div className="flex justify-between items-start mb-6">
+                <span className="text-5xl font-light text-secondary">{service.number}</span>
+                <div className="w-12 h-12 rounded-full bg-foreground text-background flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <ArrowUpRight size={20} />
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-white mb-4 group-hover:text-orange-400 transition-colors duration-300">
+              <h3 className="text-xl font-semibold text-foreground mb-4 group-hover:text-foreground transition-colors duration-300">
                 {service.title}
               </h3>
-              <p className="text-zinc-300 leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed">
                 {service.description}
               </p>
             </div>
           ))}
         </div>
 
-        <div className="text-center animate-fade-in">
+        {/* CTA */}
+        <div className="text-center animate-fade-in-up">
           <a
             href="#contact"
-            className="inline-flex items-center px-8 py-4 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-orange-500/25"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-foreground text-background rounded-full hover:bg-secondary transition-all duration-300 font-medium group"
           >
             Get in Touch for a Consultation
+            <ArrowUpRight size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
           </a>
         </div>
       </div>

@@ -1,10 +1,8 @@
-
 const Skills = () => {
   const skillCategories = [
     {
       title: "Programming Languages",
       skills: ["Python", "C", "C++", "SQL"],
-      color: "bg-blue-500",
     },
     {
       title: "Framework & Libraries",
@@ -21,7 +19,6 @@ const Skills = () => {
         "Tableau", 
         "Plotly"
       ],
-      color: "bg-green-500",
     },
     {
       title: "Artificial Intelligence",
@@ -33,7 +30,6 @@ const Skills = () => {
         "Video Regression", 
         "Data Analysis"
       ],
-      color: "bg-purple-500",
     },
     {
       title: "IoT & Embedded Systems",
@@ -43,11 +39,10 @@ const Skills = () => {
         "Jetson Nano", 
         "RTOS", 
         "Sensor Calibration", 
-        "Communication Protocols (CAN, I2C, SPI, UART, Ethernet)", 
-        "Hardware-in-the-Loop (HiL)", 
-        "Software-in-the-Loop (SiL)"
+        "Communication Protocols", 
+        "Hardware-in-the-Loop", 
+        "Software-in-the-Loop"
       ],
-      color: "bg-orange-500",
     },
     {
       title: "DevOps and Cloud",
@@ -60,12 +55,10 @@ const Skills = () => {
         "Bitbucket", 
         "Linux"
       ],
-      color: "bg-red-500",
     },
     {
       title: "Frontend",
       skills: ["HTML", "CSS", "Gradio", "Canva", "Streamlit"],
-      color: "bg-cyan-500",
     },
     {
       title: "CS Fundamentals",
@@ -77,39 +70,40 @@ const Skills = () => {
         "Operating Systems", 
         "Machine Learning"
       ],
-      color: "bg-indigo-500",
     },
   ];
 
   return (
-    <section id="skills" className="py-20 bg-zinc-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            Technical <span className="text-orange-500">Skills</span>
+    <section id="skills" className="py-24 lg:py-32 bg-tertiary">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        {/* Header */}
+        <div className="text-center mb-16 animate-fade-in-up">
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <div className="w-2 h-2 bg-foreground rounded-full"></div>
+            <span className="text-sm text-muted-foreground uppercase tracking-wider">Expertise</span>
+          </div>
+          <h2 className="font-display text-4xl lg:text-5xl font-medium text-foreground">
+            Technical Skills
           </h2>
-          <div className="w-24 h-1 bg-orange-500 mx-auto"></div>
         </div>
 
+        {/* Skills Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {skillCategories.map((category, index) => (
             <div
               key={category.title}
-              className="bg-zinc-900 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-fade-in"
+              className="bg-background p-6 rounded-2xl shadow-soft hover-lift animate-fade-in-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="flex items-center mb-4">
-                <div className={`w-4 h-4 ${category.color} rounded-full mr-3 flex-shrink-0`}></div>
-                <h3 className="text-lg font-bold text-white leading-tight">{category.title}</h3>
-              </div>
-              <div className="space-y-2">
-                {category.skills.map((skill, skillIndex) => (
-                  <div
+              <h3 className="text-base font-semibold text-foreground mb-4">{category.title}</h3>
+              <div className="flex flex-wrap gap-2">
+                {category.skills.map((skill) => (
+                  <span
                     key={skill}
-                    className="flex items-center p-2 bg-zinc-800 rounded-lg hover:bg-zinc-700 transition-colors duration-300"
+                    className="px-3 py-1.5 bg-tertiary text-muted-foreground text-xs rounded-full border border-border hover:border-foreground hover:text-foreground transition-colors"
                   >
-                    <span className="text-zinc-300 text-sm">{skill}</span>
-                  </div>
+                    {skill}
+                  </span>
                 ))}
               </div>
             </div>
