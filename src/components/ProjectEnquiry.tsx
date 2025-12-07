@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Upload, X } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
@@ -88,32 +87,34 @@ const ProjectEnquiry = () => {
   };
 
   return (
-    <section id="project-enquiry" className="py-20 bg-zinc-900 min-h-screen">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            Project <span className="bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">Enquiry</span>
+    <section id="project-enquiry" className="py-24 lg:py-32 bg-tertiary">
+      <div className="max-w-4xl mx-auto px-6 lg:px-8">
+        {/* Header */}
+        <div className="text-center mb-16 animate-fade-in-up">
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <div className="w-2 h-2 bg-foreground rounded-full"></div>
+            <span className="text-sm text-muted-foreground uppercase tracking-wider">Collaborate</span>
+          </div>
+          <h2 className="font-display text-4xl lg:text-5xl font-medium text-foreground">
+            Project Enquiry
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-blue-500 mx-auto mb-8"></div>
         </div>
 
-        <div className="bg-zinc-800 p-8 rounded-2xl border border-zinc-700 shadow-xl animate-fade-in">
-          <div className="mb-8 p-6 bg-gradient-to-r from-purple-900/30 to-blue-900/30 rounded-xl border border-purple-500/30">
-            <p className="text-zinc-300 leading-relaxed">
+        <div className="bg-background rounded-3xl p-8 lg:p-12 border border-border shadow-soft animate-fade-in-up">
+          {/* Intro Text */}
+          <div className="mb-10 p-6 bg-tertiary rounded-2xl border border-border">
+            <p className="text-muted-foreground leading-relaxed">
               Hi there! I'm a developer who's passionate about turning innovative ideas into real-world solutions. 
               I love building projects across AI/ML, IoT, smart systems, and hardware design — and I'm always 
-              looking to collaborate with curious minds. Whether you've got a concept that needs structure or a 
-              prototype that needs polish, I'm here to help bring it to life. I believe great things happen when 
-              people connect, share ideas, and build together. So if you're working on something exciting or just 
-              want to brainstorm — reach out. Let's create something impactful, together.
+              looking to collaborate with curious minds. Let's create something impactful, together.
             </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-8">
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <label htmlFor="name" className="block text-white mb-2 font-medium">
-                  Name *
+                <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
+                  Name
                 </label>
                 <input
                   type="text"
@@ -122,13 +123,13 @@ const ProjectEnquiry = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-zinc-900 text-white rounded-lg border border-zinc-600 focus:border-purple-500 focus:outline-none transition-colors placeholder-zinc-400"
+                  className="w-full px-4 py-3 bg-tertiary text-foreground rounded-xl border border-border focus:border-foreground focus:outline-none transition-colors placeholder-muted-foreground"
                   placeholder="Your full name"
                 />
               </div>
               <div>
-                <label htmlFor="mobile" className="block text-white mb-2 font-medium">
-                  Mobile Number *
+                <label htmlFor="mobile" className="block text-sm font-medium text-foreground mb-2">
+                  Mobile Number
                 </label>
                 <input
                   type="tel"
@@ -137,7 +138,7 @@ const ProjectEnquiry = () => {
                   value={formData.mobile}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-zinc-900 text-white rounded-lg border border-zinc-600 focus:border-purple-500 focus:outline-none transition-colors placeholder-zinc-400"
+                  className="w-full px-4 py-3 bg-tertiary text-foreground rounded-xl border border-border focus:border-foreground focus:outline-none transition-colors placeholder-muted-foreground"
                   placeholder="+91 XXXXX XXXXX"
                 />
               </div>
@@ -145,8 +146,8 @@ const ProjectEnquiry = () => {
 
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <label htmlFor="email" className="block text-white mb-2 font-medium">
-                  Email *
+                <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
+                  Email
                 </label>
                 <input
                   type="email"
@@ -155,13 +156,13 @@ const ProjectEnquiry = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-zinc-900 text-white rounded-lg border border-zinc-600 focus:border-purple-500 focus:outline-none transition-colors placeholder-zinc-400"
+                  className="w-full px-4 py-3 bg-tertiary text-foreground rounded-xl border border-border focus:border-foreground focus:outline-none transition-colors placeholder-muted-foreground"
                   placeholder="your.email@example.com"
                 />
               </div>
               <div>
-                <label htmlFor="subject" className="block text-white mb-2 font-medium">
-                  Subject *
+                <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
+                  Subject
                 </label>
                 <input
                   type="text"
@@ -170,7 +171,7 @@ const ProjectEnquiry = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-zinc-900 text-white rounded-lg border border-zinc-600 focus:border-purple-500 focus:outline-none transition-colors placeholder-zinc-400"
+                  className="w-full px-4 py-3 bg-tertiary text-foreground rounded-xl border border-border focus:border-foreground focus:outline-none transition-colors placeholder-muted-foreground"
                   placeholder="Project collaboration request"
                 />
               </div>
@@ -178,8 +179,8 @@ const ProjectEnquiry = () => {
 
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <label htmlFor="projectName" className="block text-white mb-2 font-medium">
-                  Project Name *
+                <label htmlFor="projectName" className="block text-sm font-medium text-foreground mb-2">
+                  Project Name
                 </label>
                 <input
                   type="text"
@@ -188,13 +189,13 @@ const ProjectEnquiry = () => {
                   value={formData.projectName}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-zinc-900 text-white rounded-lg border border-zinc-600 focus:border-purple-500 focus:outline-none transition-colors placeholder-zinc-400"
+                  className="w-full px-4 py-3 bg-tertiary text-foreground rounded-xl border border-border focus:border-foreground focus:outline-none transition-colors placeholder-muted-foreground"
                   placeholder="Your project name"
                 />
               </div>
               <div>
-                <label htmlFor="projectField" className="block text-white mb-2 font-medium">
-                  Project Field *
+                <label htmlFor="projectField" className="block text-sm font-medium text-foreground mb-2">
+                  Project Field
                 </label>
                 <select
                   id="projectField"
@@ -202,7 +203,7 @@ const ProjectEnquiry = () => {
                   value={formData.projectField}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-zinc-900 text-white rounded-lg border border-zinc-600 focus:border-purple-500 focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 bg-tertiary text-foreground rounded-xl border border-border focus:border-foreground focus:outline-none transition-colors"
                 >
                   <option value="">Select project field</option>
                   {projectFields.map((field) => (
@@ -215,8 +216,8 @@ const ProjectEnquiry = () => {
             </div>
 
             <div>
-              <label htmlFor="projectDescription" className="block text-white mb-2 font-medium">
-                Project Description *
+              <label htmlFor="projectDescription" className="block text-sm font-medium text-foreground mb-2">
+                Project Description
               </label>
               <textarea
                 id="projectDescription"
@@ -225,13 +226,13 @@ const ProjectEnquiry = () => {
                 value={formData.projectDescription}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 bg-zinc-900 text-white rounded-lg border border-zinc-600 focus:border-purple-500 focus:outline-none transition-colors resize-none placeholder-zinc-400"
+                className="w-full px-4 py-3 bg-tertiary text-foreground rounded-xl border border-border focus:border-foreground focus:outline-none transition-colors resize-none placeholder-muted-foreground"
                 placeholder="Describe your project in detail..."
               ></textarea>
             </div>
 
             <div>
-              <label htmlFor="designIdea" className="block text-white mb-2 font-medium">
+              <label htmlFor="designIdea" className="block text-sm font-medium text-foreground mb-2">
                 Project Design Idea (Optional)
               </label>
               <textarea
@@ -240,16 +241,16 @@ const ProjectEnquiry = () => {
                 rows={4}
                 value={formData.designIdea}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-zinc-900 text-white rounded-lg border border-zinc-600 focus:border-purple-500 focus:outline-none transition-colors resize-none placeholder-zinc-400"
+                className="w-full px-4 py-3 bg-tertiary text-foreground rounded-xl border border-border focus:border-foreground focus:outline-none transition-colors resize-none placeholder-muted-foreground"
                 placeholder="Share any design ideas, mockups, or visual concepts you have in mind..."
               ></textarea>
             </div>
 
             <div>
-              <label className="block text-white mb-2 font-medium">
+              <label className="block text-sm font-medium text-foreground mb-2">
                 Upload Files (Optional)
               </label>
-              <div className="border-2 border-dashed border-zinc-600 rounded-lg p-6 text-center hover:border-purple-500 transition-colors">
+              <div className="border-2 border-dashed border-border rounded-2xl p-8 text-center hover:border-foreground transition-colors cursor-pointer">
                 <input
                   type="file"
                   multiple
@@ -259,21 +260,21 @@ const ProjectEnquiry = () => {
                   accept=".pdf,.doc,.docx,.txt,.jpg,.jpeg,.png,.gif"
                 />
                 <label htmlFor="file-upload" className="cursor-pointer">
-                  <Upload className="mx-auto h-12 w-12 text-zinc-400 mb-4" />
-                  <p className="text-zinc-400">Click to upload files or drag and drop</p>
-                  <p className="text-zinc-500 text-sm mt-2">PDF, DOC, TXT, Images up to 10MB each</p>
+                  <Upload className="mx-auto h-10 w-10 text-muted-foreground mb-4" />
+                  <p className="text-muted-foreground">Click to upload files or drag and drop</p>
+                  <p className="text-secondary text-sm mt-2">PDF, DOC, TXT, Images up to 10MB each</p>
                 </label>
               </div>
               
               {files.length > 0 && (
                 <div className="mt-4 space-y-2">
                   {files.map((file, index) => (
-                    <div key={index} className="flex items-center justify-between bg-zinc-900 p-3 rounded-lg">
-                      <span className="text-zinc-300 text-sm">{file.name}</span>
+                    <div key={index} className="flex items-center justify-between bg-tertiary p-3 rounded-xl border border-border">
+                      <span className="text-foreground text-sm">{file.name}</span>
                       <button
                         type="button"
                         onClick={() => removeFile(index)}
-                        className="text-red-400 hover:text-red-300 transition-colors"
+                        className="text-muted-foreground hover:text-foreground transition-colors"
                       >
                         <X size={16} />
                       </button>
@@ -286,7 +287,7 @@ const ProjectEnquiry = () => {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full px-8 py-4 bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-lg hover:from-purple-600 hover:to-blue-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-purple-500/25 disabled:opacity-50 disabled:cursor-not-allowed font-semibold"
+              className="w-full px-8 py-4 bg-foreground text-background rounded-xl hover:bg-secondary transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed font-medium"
             >
               {isSubmitting ? "Sending Enquiry..." : "Send Project Enquiry"}
             </button>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { projectsData } from "@/data/projects";
 import ProjectModal from "@/components/ProjectModal";
+import { ArrowUpRight, ArrowRight } from "lucide-react";
 
 interface Project {
   title: string;
@@ -15,7 +16,7 @@ interface Project {
 }
 
 const Projects = () => {
-  const [projects, setProjects] = useState<Project[]>(projectsData);
+  const [projects] = useState<Project[]>(projectsData);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
@@ -30,109 +31,116 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="py-20 bg-zinc-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            Featured <span className="text-orange-500">Projects</span>
+    <section id="projects" className="py-24 lg:py-32 bg-tertiary">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        {/* Header */}
+        <div className="text-center mb-16 animate-fade-in-up">
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <div className="w-2 h-2 bg-foreground rounded-full"></div>
+            <span className="text-sm text-muted-foreground uppercase tracking-wider">Portfolio</span>
+          </div>
+          <h2 className="font-display text-4xl lg:text-5xl font-medium text-foreground">
+            Featured Projects
           </h2>
-          <div className="w-24 h-1 bg-orange-500 mx-auto"></div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        {/* Projects List */}
+        <div className="space-y-6 mb-20">
           {projects.map((project, index) => (
             <div
               key={project.title}
-              className="bg-zinc-900 rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-fade-in group"
+              onClick={() => openModal(project)}
+              className="group cursor-pointer bg-background rounded-2xl overflow-hidden shadow-soft hover-lift animate-fade-in-up border border-border hover:border-foreground transition-colors duration-300"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="relative overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
-                />
-                <div className="absolute top-4 right-4">
-                  <span className="px-3 py-1 bg-orange-500/90 text-white rounded-full text-sm font-medium">
-                    {project.category}
-                  </span>
-                </div>
-              </div>
-              
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-orange-400 transition-colors">
-                  {project.title}
-                </h3>
-                <p className="text-zinc-400 mb-4 line-clamp-3">
-                  {project.description}
-                </p>
-                
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.technologies.slice(0, 3).map((tech) => (
-                    <span
-                      key={tech}
-                      className="px-2 py-1 bg-zinc-700 text-zinc-300 rounded text-sm"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                  {project.technologies.length > 3 && (
-                    <span className="px-2 py-1 bg-zinc-700 text-zinc-300 rounded text-sm">
-                      +{project.technologies.length - 3} more
-                    </span>
-                  )}
+              <div className="flex flex-col lg:flex-row">
+                {/* Image */}
+                <div className="lg:w-80 h-48 lg:h-auto flex-shrink-0 overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105"
+                  />
                 </div>
                 
-                <button
-                  onClick={() => openModal(project)}
-                  className="w-full px-4 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors duration-300 font-medium"
-                >
-                  View Details
-                </button>
+                {/* Content */}
+                <div className="flex-1 p-6 lg:p-8 flex flex-col justify-between">
+                  <div>
+                    <div className="flex items-start justify-between mb-4">
+                      <div>
+                        <span className="inline-block px-3 py-1 bg-tertiary text-xs text-muted-foreground rounded-full border border-border mb-3">
+                          {project.category}
+                        </span>
+                        <h3 className="text-xl lg:text-2xl font-semibold text-foreground group-hover:text-foreground transition-colors">
+                          {project.title}
+                        </h3>
+                      </div>
+                      <div className="w-10 h-10 rounded-full bg-foreground text-background flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex-shrink-0 ml-4">
+                        <ArrowUpRight size={18} />
+                      </div>
+                    </div>
+                    <p className="text-muted-foreground text-sm lg:text-base line-clamp-2 mb-4">
+                      {project.description}
+                    </p>
+                  </div>
+                  
+                  {/* Tags */}
+                  <div className="flex flex-wrap gap-2">
+                    {project.technologies.slice(0, 4).map((tech) => (
+                      <span
+                        key={tech}
+                        className="px-3 py-1 bg-tertiary text-xs text-muted-foreground rounded-full border border-border"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                    {project.technologies.length > 4 && (
+                      <span className="px-3 py-1 bg-tertiary text-xs text-muted-foreground rounded-full border border-border">
+                        +{project.technologies.length - 4}
+                      </span>
+                    )}
+                  </div>
+                </div>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Upcoming and Ongoing Projects Section */}
-        <div className="text-center animate-fade-in">
-          <div className="bg-zinc-900 rounded-2xl p-12 border border-zinc-700 shadow-xl">
-            <div className="w-20 h-20 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-6">
-              <span className="text-2xl">🚀</span>
+        {/* Upcoming Projects Section */}
+        <div className="text-center animate-fade-in-up">
+          <div className="bg-background rounded-3xl p-12 border border-border shadow-soft">
+            <div className="w-16 h-16 bg-foreground text-background rounded-2xl flex items-center justify-center mx-auto mb-8">
+              <ArrowRight size={28} />
             </div>
-            <h3 className="text-3xl font-bold text-white mb-4">
-              Upcoming and Ongoing <span className="text-orange-500">Projects</span>
+            <h3 className="font-display text-3xl font-medium text-foreground mb-4">
+              Upcoming & Ongoing Projects
             </h3>
-            <p className="text-zinc-400 text-lg mb-8 max-w-2xl mx-auto">
+            <p className="text-muted-foreground text-lg mb-10 max-w-2xl mx-auto">
               I'm constantly working on new and exciting projects! Stay tuned for innovative solutions 
-              in AI/ML, IoT, robotics, and more. Each project brings unique challenges and opportunities 
-              to push the boundaries of technology.
+              in AI/ML, IoT, robotics, and more.
             </p>
-            <div className="grid md:grid-cols-3 gap-6 mb-8">
-              <div className="p-4 bg-zinc-800 rounded-lg border border-zinc-600">
-                <div className="text-orange-400 mb-2">🤖</div>
-                <h4 className="font-semibold text-white mb-2">AI/ML Projects</h4>
-                <p className="text-zinc-400 text-sm">Advanced machine learning models and intelligent systems</p>
+            <div className="grid md:grid-cols-3 gap-6 mb-10">
+              <div className="p-6 bg-tertiary rounded-2xl border border-border">
+                <h4 className="font-semibold text-foreground mb-2">AI/ML Projects</h4>
+                <p className="text-muted-foreground text-sm">Advanced machine learning models and intelligent systems</p>
               </div>
-              <div className="p-4 bg-zinc-800 rounded-lg border border-zinc-600">
-                <div className="text-orange-400 mb-2">⚡</div>
-                <h4 className="font-semibold text-white mb-2">IoT Solutions</h4>
-                <p className="text-zinc-400 text-sm">Smart connected devices and automation systems</p>
+              <div className="p-6 bg-tertiary rounded-2xl border border-border">
+                <h4 className="font-semibold text-foreground mb-2">IoT Solutions</h4>
+                <p className="text-muted-foreground text-sm">Smart connected devices and automation systems</p>
               </div>
-              <div className="p-4 bg-zinc-800 rounded-lg border border-zinc-600">
-                <div className="text-orange-400 mb-2">🔧</div>
-                <h4 className="font-semibold text-white mb-2">Hardware Design</h4>
-                <p className="text-zinc-400 text-sm">Embedded systems and robotics development</p>
+              <div className="p-6 bg-tertiary rounded-2xl border border-border">
+                <h4 className="font-semibold text-foreground mb-2">Hardware Design</h4>
+                <p className="text-muted-foreground text-sm">Embedded systems and robotics development</p>
               </div>
             </div>
-            <div className="flex flex-wrap justify-center gap-4">
-              <span className="px-4 py-2 bg-orange-500/20 text-orange-300 rounded-full text-sm border border-orange-500/30">
+            <div className="flex flex-wrap justify-center gap-3">
+              <span className="px-5 py-2 bg-foreground text-background rounded-full text-sm font-medium">
                 In Development
               </span>
-              <span className="px-4 py-2 bg-blue-500/20 text-blue-300 rounded-full text-sm border border-blue-500/30">
+              <span className="px-5 py-2 bg-tertiary text-foreground rounded-full text-sm border border-border">
                 Research Phase
               </span>
-              <span className="px-4 py-2 bg-green-500/20 text-green-300 rounded-full text-sm border border-green-500/30">
+              <span className="px-5 py-2 bg-tertiary text-foreground rounded-full text-sm border border-border">
                 Testing
               </span>
             </div>
