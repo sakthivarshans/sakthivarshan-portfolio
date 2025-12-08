@@ -14,7 +14,7 @@ const About = () => {
               next project?
             </p>
             <p className="text-base text-secondary leading-relaxed mb-10">
-              Computer Science Pre-Final Year Student with hands-on experience in AI, IoT, Robotics, and Web Development. 
+              Computer Science Pre-Final Year Student with hands-on experience in AI, IoT, and Web Development. 
               Skilled in machine learning, embedded systems, automation, and real-time processing with a passion 
               for creating innovative solutions.
             </p>
@@ -51,7 +51,7 @@ const About = () => {
               <img
                 src="/lovable-uploads/sakthivarshan-profile.png"
                 alt="Sakthivarshan working"
-                className="w-full h-64 object-cover object-top grayscale"
+                className="w-full h-64 object-cover object-[center_20%] grayscale"
               />
             </div>
 
