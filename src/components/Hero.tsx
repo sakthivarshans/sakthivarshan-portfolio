@@ -38,11 +38,11 @@ const Hero = () => {
             </h1>
             
             <p className="text-lg text-muted-foreground mb-4">
-              — I'm Sakthivarshan, an AI & Robotics Developer
+              — I'm Sakthivarshan, an AI & IoT/ESH Developer
             </p>
             
             <p className="text-base text-secondary mb-10 max-w-md lg:max-w-lg">
-              Computer Science Enthusiast specializing in AI, IoT, Robotics, and Web Development. 
+              Computer Science Enthusiast specializing in AI, IoT, and Web Development. 
               Transforming innovative ideas into real-world solutions.
             </p>
 
