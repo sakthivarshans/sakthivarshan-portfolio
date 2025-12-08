@@ -67,13 +67,10 @@ const Experience = () => {
             </h2>
           </div>
           <div className="flex flex-col justify-end animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            <p className="text-muted-foreground mb-4">
+            <p className="text-muted-foreground">
               Over the past 4+ years, I've had the opportunity to work on a wide range of projects, 
               collaborating with diverse teams and clients to bring creative visions to life.
             </p>
-            <a href="#contact" className="inline-flex items-center gap-2 text-foreground font-medium hover:gap-3 transition-all">
-              Book A Call <ArrowUpRight size={16} />
-            </a>
           </div>
         </div>
 

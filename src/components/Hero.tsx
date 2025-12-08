@@ -27,12 +27,8 @@ const Hero = () => {
             {/* Stats Row */}
             <div className="flex justify-center lg:justify-start gap-8 mb-12">
               <div className="text-left">
-                <div className="text-4xl lg:text-5xl font-semibold text-foreground">+50</div>
+                <div className="text-4xl lg:text-5xl font-semibold text-foreground">30+</div>
                 <div className="text-sm text-muted-foreground mt-1">Projects completed</div>
-              </div>
-              <div className="text-left">
-                <div className="text-4xl lg:text-5xl font-semibold text-foreground">+40</div>
-                <div className="text-sm text-muted-foreground mt-1">Students guided</div>
               </div>
             </div>
 
@@ -97,7 +93,7 @@ const Hero = () => {
                 <img
                   src="/lovable-uploads/sakthivarshan-profile.png"
                   alt="Sakthivarshan S"
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                  className="w-full h-full object-cover object-top grayscale hover:grayscale-0 transition-all duration-700"
                 />
               </div>
               {/* Decorative elements */}

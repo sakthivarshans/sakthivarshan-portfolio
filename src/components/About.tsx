@@ -21,8 +21,8 @@ const About = () => {
 
             {/* Stats Card */}
             <div className="bg-background rounded-2xl p-8 shadow-soft mb-8">
-              <div className="text-5xl lg:text-6xl font-semibold text-foreground mb-2">120%</div>
-              <p className="text-muted-foreground">Average increase in client engagement in the first 6 months</p>
+              <div className="text-5xl lg:text-6xl font-semibold text-foreground mb-2">100%</div>
+              <p className="text-muted-foreground">Client engagement and satisfaction</p>
             </div>
 
             {/* Feature Points */}
@@ -51,7 +51,7 @@ const About = () => {
               <img
                 src="/lovable-uploads/sakthivarshan-profile.png"
                 alt="Sakthivarshan working"
-                className="w-full h-64 object-cover grayscale"
+                className="w-full h-64 object-cover object-top grayscale"
               />
             </div>
 
