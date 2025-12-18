@@ -43,7 +43,7 @@ const RedStringBackground = () => {
              T 600 3000"
           stroke="#B11226"
           strokeWidth="1.5"
-          strokeOpacity="0.12"
+          strokeOpacity="0.3"
           fill="none"
           strokeLinecap="round"
           className="animate-string-flow"
@@ -84,7 +84,7 @@ const RedStringBackground = () => {
              T -50 2900"
           stroke="#B11226"
           strokeWidth="1"
-          strokeOpacity="0.08"
+          strokeOpacity="0.2"
           fill="none"
           strokeLinecap="round"
         />
