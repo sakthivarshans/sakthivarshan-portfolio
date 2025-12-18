@@ -7,11 +7,13 @@ import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import ProjectEnquiry from "@/components/ProjectEnquiry";
 import Navigation from "@/components/Navigation";
+import RedStringBackground from "@/components/RedStringBackground";
 import { Github, Linkedin, Mail } from "lucide-react";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground relative">
+      <RedStringBackground />
       <Navigation />
       <Hero />
       <About />
