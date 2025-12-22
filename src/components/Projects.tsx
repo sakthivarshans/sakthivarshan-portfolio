@@ -15,10 +15,28 @@ interface Project {
   outcomes?: string[];
 }
 
+type PhaseType = "development" | "research" | "testing";
+
+const upcomingProjects = {
+  development: [
+    { title: "AI-Powered Code Review", description: "Automated code analysis and suggestions" },
+  ],
+  research: [
+    { title: "Self Healing Infrastructure", description: "Autonomous systems that detect and recover from failures" },
+    { title: "Early Warning System for Industrial Sensor Drift", description: "Predictive maintenance through sensor anomaly detection" },
+    { title: "Superposition Compression", description: "Advanced compression without breaking Shannon's limit" },
+  ],
+  testing: [
+    { title: "Federated Learning for System Privacy", description: "Privacy-preserving machine learning across distributed systems" },
+    { title: "Noether - Complete Student Companion", description: "AI-powered academic assistant for students" },
+  ],
+};
+
 const Projects = () => {
   const [projects] = useState<Project[]>(projectsData);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [activePhase, setActivePhase] = useState<PhaseType>("research");
 
   const openModal = (project: Project) => {
     setSelectedProject(project);
@@ -28,6 +46,12 @@ const Projects = () => {
   const closeModal = () => {
     setSelectedProject(null);
     setIsModalOpen(false);
+  };
+
+  const phaseColors = {
+    development: "bg-blue-500",
+    research: "bg-amber-500",
+    testing: "bg-green-500",
   };
 
   return (
@@ -108,56 +132,47 @@ const Projects = () => {
 
         {/* Upcoming Projects Section */}
         <div className="text-center animate-fade-in-up">
-          <div className="bg-background rounded-3xl p-12 border border-border shadow-soft">
+          <div className="bg-background rounded-3xl p-8 lg:p-12 border border-border shadow-soft">
             <div className="w-16 h-16 bg-foreground text-background rounded-2xl flex items-center justify-center mx-auto mb-8">
               <ArrowRight size={28} />
             </div>
             <h3 className="font-display text-3xl font-medium text-foreground mb-4">
               Upcoming & Ongoing Projects
             </h3>
-            <p className="text-muted-foreground text-lg mb-10 max-w-2xl mx-auto">
-              I'm constantly working on new and exciting projects! Stay tuned for innovative solutions 
-              in AI/ML, IoT, robotics, and more.
+            <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
+              Click on a phase to explore what I'm working on
             </p>
             
-            {/* Research Phase */}
-            <div className="mb-8">
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-tertiary text-foreground rounded-full text-sm border border-border mb-6">
-                <span className="w-2 h-2 bg-amber-500 rounded-full"></span>
-                Research Phase
-              </div>
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="p-6 bg-tertiary rounded-2xl border border-border text-left">
-                  <h4 className="font-semibold text-foreground mb-2">Self Healing Infrastructure</h4>
-                  <p className="text-muted-foreground text-sm">Autonomous systems that detect and recover from failures</p>
-                </div>
-                <div className="p-6 bg-tertiary rounded-2xl border border-border text-left">
-                  <h4 className="font-semibold text-foreground mb-2">Early Warning System for Industrial Sensor Drift</h4>
-                  <p className="text-muted-foreground text-sm">Predictive maintenance through sensor anomaly detection</p>
-                </div>
-                <div className="p-6 bg-tertiary rounded-2xl border border-border text-left">
-                  <h4 className="font-semibold text-foreground mb-2">Superposition Compression</h4>
-                  <p className="text-muted-foreground text-sm">Advanced compression without breaking Shannon's limit</p>
-                </div>
-              </div>
+            {/* Phase Buttons */}
+            <div className="flex flex-wrap justify-center gap-3 mb-8">
+              {(["development", "research", "testing"] as PhaseType[]).map((phase) => (
+                <button
+                  key={phase}
+                  onClick={() => setActivePhase(phase)}
+                  className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
+                    activePhase === phase
+                      ? "bg-foreground text-background"
+                      : "bg-tertiary text-foreground border border-border hover:border-foreground"
+                  }`}
+                >
+                  <span className={`w-2 h-2 rounded-full ${phaseColors[phase]}`}></span>
+                  {phase.charAt(0).toUpperCase() + phase.slice(1)} Phase
+                </button>
+              ))}
             </div>
 
-            {/* Testing Phase */}
-            <div>
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-tertiary text-foreground rounded-full text-sm border border-border mb-6">
-                <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                Testing Phase
-              </div>
-              <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-                <div className="p-6 bg-tertiary rounded-2xl border border-border text-left">
-                  <h4 className="font-semibold text-foreground mb-2">Federated Learning for System Privacy</h4>
-                  <p className="text-muted-foreground text-sm">Privacy-preserving machine learning across distributed systems</p>
+            {/* Projects Grid */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {upcomingProjects[activePhase].map((project, index) => (
+                <div
+                  key={project.title}
+                  className="p-6 bg-tertiary rounded-2xl border border-border text-left animate-fade-in"
+                  style={{ animationDelay: `${index * 0.05}s` }}
+                >
+                  <h4 className="font-semibold text-foreground mb-2">{project.title}</h4>
+                  <p className="text-muted-foreground text-sm">{project.description}</p>
                 </div>
-                <div className="p-6 bg-tertiary rounded-2xl border border-border text-left">
-                  <h4 className="font-semibold text-foreground mb-2">Noether - Complete Student Companion</h4>
-                  <p className="text-muted-foreground text-sm">AI-powered academic assistant for students</p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
