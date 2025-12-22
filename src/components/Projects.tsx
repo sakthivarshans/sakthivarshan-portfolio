@@ -119,30 +119,45 @@ const Projects = () => {
               I'm constantly working on new and exciting projects! Stay tuned for innovative solutions 
               in AI/ML, IoT, robotics, and more.
             </p>
-            <div className="grid md:grid-cols-3 gap-6 mb-10">
-              <div className="p-6 bg-tertiary rounded-2xl border border-border">
-                <h4 className="font-semibold text-foreground mb-2">AI/ML Projects</h4>
-                <p className="text-muted-foreground text-sm">Advanced machine learning models and intelligent systems</p>
+            
+            {/* Research Phase */}
+            <div className="mb-8">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-tertiary text-foreground rounded-full text-sm border border-border mb-6">
+                <span className="w-2 h-2 bg-amber-500 rounded-full"></span>
+                Research Phase
               </div>
-              <div className="p-6 bg-tertiary rounded-2xl border border-border">
-                <h4 className="font-semibold text-foreground mb-2">IoT Solutions</h4>
-                <p className="text-muted-foreground text-sm">Smart connected devices and automation systems</p>
-              </div>
-              <div className="p-6 bg-tertiary rounded-2xl border border-border">
-                <h4 className="font-semibold text-foreground mb-2">Hardware Design</h4>
-                <p className="text-muted-foreground text-sm">Embedded systems and robotics development</p>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="p-6 bg-tertiary rounded-2xl border border-border text-left">
+                  <h4 className="font-semibold text-foreground mb-2">Self Healing Infrastructure</h4>
+                  <p className="text-muted-foreground text-sm">Autonomous systems that detect and recover from failures</p>
+                </div>
+                <div className="p-6 bg-tertiary rounded-2xl border border-border text-left">
+                  <h4 className="font-semibold text-foreground mb-2">Early Warning System for Industrial Sensor Drift</h4>
+                  <p className="text-muted-foreground text-sm">Predictive maintenance through sensor anomaly detection</p>
+                </div>
+                <div className="p-6 bg-tertiary rounded-2xl border border-border text-left">
+                  <h4 className="font-semibold text-foreground mb-2">Superposition Compression</h4>
+                  <p className="text-muted-foreground text-sm">Advanced compression without breaking Shannon's limit</p>
+                </div>
               </div>
             </div>
-            <div className="flex flex-wrap justify-center gap-3">
-              <span className="px-5 py-2 bg-foreground text-background rounded-full text-sm font-medium">
-                In Development
-              </span>
-              <span className="px-5 py-2 bg-tertiary text-foreground rounded-full text-sm border border-border">
-                Research Phase
-              </span>
-              <span className="px-5 py-2 bg-tertiary text-foreground rounded-full text-sm border border-border">
-                Testing
-              </span>
+
+            {/* Testing Phase */}
+            <div>
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-tertiary text-foreground rounded-full text-sm border border-border mb-6">
+                <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+                Testing Phase
+              </div>
+              <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+                <div className="p-6 bg-tertiary rounded-2xl border border-border text-left">
+                  <h4 className="font-semibold text-foreground mb-2">Federated Learning for System Privacy</h4>
+                  <p className="text-muted-foreground text-sm">Privacy-preserving machine learning across distributed systems</p>
+                </div>
+                <div className="p-6 bg-tertiary rounded-2xl border border-border text-left">
+                  <h4 className="font-semibold text-foreground mb-2">Noether - Complete Student Companion</h4>
+                  <p className="text-muted-foreground text-sm">AI-powered academic assistant for students</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

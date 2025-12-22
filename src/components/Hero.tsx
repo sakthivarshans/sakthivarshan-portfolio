@@ -24,21 +24,13 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Text Content */}
           <div className="text-center lg:text-left animate-fade-in-up">
-            {/* Stats Row */}
-            <div className="flex justify-center lg:justify-start gap-8 mb-12">
-              <div className="text-left">
-                <div className="text-4xl lg:text-5xl font-semibold text-foreground">30+</div>
-                <div className="text-sm text-muted-foreground mt-1">Projects completed</div>
-              </div>
-            </div>
-
             <h1 className="font-display text-7xl lg:text-[10rem] font-medium mb-6 tracking-tight leading-none text-foreground">
               {displayText}
               <span className="animate-pulse text-secondary">|</span>
             </h1>
             
             <p className="text-lg text-muted-foreground mb-4">
-              — I'm Sakthivarshan, an AI & IoT/ESH Developer
+              I'm Sakthivarshan, an AI & IoT/ESH Developer
             </p>
             
             <p className="text-base text-secondary mb-10 max-w-md lg:max-w-lg">
