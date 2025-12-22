@@ -19,7 +19,8 @@ type PhaseType = "development" | "research" | "testing";
 
 const upcomingProjects = {
   development: [
-    { title: "AI-Powered Code Review", description: "Automated code analysis and suggestions" },
+    { title: "Personal Learning Progress Tracker", description: "Track and visualize your learning journey" },
+    { title: "An Application for My Future Self", description: "A fun weekend project" },
   ],
   research: [
     { title: "Self Healing Infrastructure", description: "Autonomous systems that detect and recover from failures" },
