@@ -30,7 +30,7 @@ const About = () => {
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-foreground rounded-full mt-2 flex-shrink-0"></div>
                 <p className="text-muted-foreground">
-33:                   In my 4 Years of learning, I specialize in creating intuitive, user-focused designs that 
+                  In my 4 Years of learning, I specialize in creating intuitive, user-focused designs that 
                   solve real-world problems and deliver seamless digital experiences.
                 </p>
               </div>
