@@ -44,11 +44,8 @@ const Services = () => {
               className="group bg-tertiary p-8 rounded-2xl hover-lift animate-fade-in-up border border-border hover:border-foreground transition-colors duration-300"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="flex justify-between items-start mb-6">
+              <div className="mb-6">
                 <span className="text-5xl font-light text-secondary">{service.number}</span>
-                <div className="w-12 h-12 rounded-full bg-foreground text-background flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <ArrowUpRight size={20} />
-                </div>
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-4 group-hover:text-foreground transition-colors duration-300">
                 {service.title}
