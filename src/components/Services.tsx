@@ -9,16 +9,11 @@ const Services = () => {
     },
     {
       number: "02",
-      title: "UI/UX Design & Canva Branding",
-      description: "Creative design solutions for digital products and brand identity development.",
-    },
-    {
-      number: "03",
-      title: "AI/ML/DL Project Guidance",
+      title: "AI/ML Projects",
       description: "Expert consultation and guidance for AI/ML projects. Successfully guided 10+ people.",
     },
     {
-      number: "04",
+      number: "03",
       title: "IoT & Embedded Systems Projects",
       description: "Complete IoT solutions and embedded systems development. Guided 30+ students.",
     },
