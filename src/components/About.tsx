@@ -22,7 +22,7 @@ const About = () => {
             {/* Stats Card */}
             <div className="bg-background rounded-2xl p-8 shadow-soft mb-8">
               <div className="text-5xl lg:text-6xl font-semibold text-foreground mb-2">100%</div>
-              <p className="text-muted-foreground">Client engagement and satisfaction</p>
+              <p className="text-muted-foreground">Client Engagement</p>
             </div>
 
             {/* Feature Points */}
@@ -30,7 +30,7 @@ const About = () => {
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-foreground rounded-full mt-2 flex-shrink-0"></div>
                 <p className="text-muted-foreground">
-                  With 4+ years of experience, I specialize in creating intuitive, user-focused designs that 
+33:                   In my 4 Years of learning, I specialize in creating intuitive, user-focused designs that 
                   solve real-world problems and deliver seamless digital experiences.
                 </p>
               </div>
