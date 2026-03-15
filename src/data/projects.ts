@@ -3,7 +3,7 @@ export const projectsData = [
     title: "Autonomous SRE Platform",
     description: "An AI that monitors production systems 24/7 and autonomously fixes incidents — no human SRE engineer needed.",
     fullDescription: "A fully autonomous Site Reliability Engineering platform powered by LLMs that monitors application health 24/7, detects anomalies, diagnoses root causes, and auto-resolves incidents without any human intervention. Built to replace repetitive SRE tasks and reduce MTTR to near-zero.",
-    image: "/lovable-uploads/blinkwall-project.png",
+    image: "/lovable-uploads/sre-project.png",
     technologies: ["Python", "LLMs", "Docker", "Kubernetes", "Azure", "REST APIs", "Monitoring", "Automation"],
     category: "AI/ML",
     features: [
