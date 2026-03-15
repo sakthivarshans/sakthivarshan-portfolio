@@ -3,7 +3,7 @@ import { ArrowDown, Github, Linkedin, Mail, ArrowUpRight } from "lucide-react";
 
 const Hero = () => {
   const [displayText, setDisplayText] = useState("");
-  const fullText = "Hello";
+  const fullText = "Hi, I'm Sakthi.";
 
   useEffect(() => {
     let index = 0;
@@ -24,21 +24,25 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Text Content */}
           <div className="text-center lg:text-left animate-fade-in-up">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 border border-border text-sm text-muted-foreground rounded-full mb-6 animate-pulse">
+              <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+              Open to Opportunities
+            </div>
+
             <h1 className="font-display text-7xl lg:text-[10rem] font-medium mb-6 tracking-tight leading-none text-foreground">
               {displayText}
               <span className="animate-pulse text-secondary">|</span>
             </h1>
             
             <p className="text-lg text-muted-foreground mb-4">
-              I'm Sakthivarshan, an AI & IoT/ESH Developer
+              I'm Sakthivarshan — AI Builder & Researcher
             </p>
             
             <p className="text-base text-secondary mb-10 max-w-md lg:max-w-lg">
-              Computer Science Enthusiast specializing in AI, IoT, and Web Development. 
-              Transforming innovative ideas into real-world solutions.
+              I build AI that works in the real world. 10+ products shipped across healthcare, agriculture, marine science, autonomous systems & edge hardware.
             </p>
 
-            <div className="flex flex-col sm:flex-row justify-center lg:justify-start items-center gap-4 mb-12">
+            <div className="flex flex-col sm:flex-row justify-center lg:justify-start items-center gap-4 mb-4">
               <a
                 href="#about"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-foreground text-background rounded-full hover:bg-secondary transition-all duration-300 font-medium group"
@@ -79,6 +83,12 @@ const Hero = () => {
                   <Mail size={20} />
                 </a>
               </div>
+            </div>
+
+            <div className="flex flex-wrap gap-3 mt-2 justify-center lg:justify-start mb-12">
+              <span className="px-4 py-1.5 border border-border text-muted-foreground text-sm rounded-full">10+ Products Shipped</span>
+              <span className="px-4 py-1.5 border border-border text-muted-foreground text-sm rounded-full">5+ Domains Solved</span>
+              <span className="px-4 py-1.5 border border-border text-muted-foreground text-sm rounded-full">Edge AI + Cloud</span>
             </div>
 
             <div className="flex items-center gap-2 text-muted-foreground">
