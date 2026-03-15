@@ -29,7 +29,7 @@ export const projectsData = [
     title: "DataSpine — Marine Science AI Platform",
     description: "A full platform for marine scientists to identify new species, match DNA sequences, and collaborate globally.",
     fullDescription: "DataSpine is a comprehensive AI-powered platform built specifically for marine scientists. It enables real-time species identification from images using computer vision, DNA sequence matching, and a global collaboration network connecting marine researchers worldwide. Built to accelerate marine biodiversity research.",
-    image: "/lovable-uploads/blinkwall-project.png",
+    image: "/lovable-uploads/dataspine-project.png",
     technologies: ["Python", "TensorFlow", "Computer Vision", "React", "Node.js", "MongoDB", "DNA Analysis", "REST APIs"],
     category: "AI/ML",
     features: [
