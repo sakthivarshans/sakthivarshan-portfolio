@@ -3,7 +3,7 @@ export const projectsData = [
     title: "Autonomous SRE Platform",
     description: "An AI that monitors production systems 24/7 and autonomously fixes incidents — no human SRE engineer needed.",
     fullDescription: "A fully autonomous Site Reliability Engineering platform powered by LLMs that monitors application health 24/7, detects anomalies, diagnoses root causes, and auto-resolves incidents without any human intervention. Built to replace repetitive SRE tasks and reduce MTTR to near-zero.",
-    image: "/lovable-uploads/blinkwall-project.png",
+    image: "/lovable-uploads/sre-project.png",
     technologies: ["Python", "LLMs", "Docker", "Kubernetes", "Azure", "REST APIs", "Monitoring", "Automation"],
     category: "AI/ML",
     features: [
@@ -29,7 +29,7 @@ export const projectsData = [
     title: "DataSpine — Marine Science AI Platform",
     description: "A full platform for marine scientists to identify new species, match DNA sequences, and collaborate globally.",
     fullDescription: "DataSpine is a comprehensive AI-powered platform built specifically for marine scientists. It enables real-time species identification from images using computer vision, DNA sequence matching, and a global collaboration network connecting marine researchers worldwide. Built to accelerate marine biodiversity research.",
-    image: "/lovable-uploads/blinkwall-project.png",
+    image: "/lovable-uploads/dataspine-project.png",
     technologies: ["Python", "TensorFlow", "Computer Vision", "React", "Node.js", "MongoDB", "DNA Analysis", "REST APIs"],
     category: "AI/ML",
     features: [
@@ -55,7 +55,7 @@ export const projectsData = [
     title: "Noether — AI Study Companion",
     description: "A complete AI-powered study companion for students and professionals — built to actually work, not just demo.",
     fullDescription: "Noether is a full-featured AI study companion that helps students and professionals learn faster and smarter. Built with LLMs and RAG architecture, it understands documents, answers questions, creates study plans, generates quizzes, and adapts to individual learning styles. Named after Emmy Noether, the mathematician.",
-    image: "/lovable-uploads/blinkwall-project.png",
+    image: "/lovable-uploads/noether-project.png",
     technologies: ["Python", "LLMs", "RAG", "TensorFlow", "React", "FastAPI", "Vector DB", "NLP"],
     category: "AI/ML",
     features: [
