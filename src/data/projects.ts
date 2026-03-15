@@ -55,7 +55,7 @@ export const projectsData = [
     title: "Noether — AI Study Companion",
     description: "A complete AI-powered study companion for students and professionals — built to actually work, not just demo.",
     fullDescription: "Noether is a full-featured AI study companion that helps students and professionals learn faster and smarter. Built with LLMs and RAG architecture, it understands documents, answers questions, creates study plans, generates quizzes, and adapts to individual learning styles. Named after Emmy Noether, the mathematician.",
-    image: "/lovable-uploads/blinkwall-project.png",
+    image: "/lovable-uploads/noether-project.png",
     technologies: ["Python", "LLMs", "RAG", "TensorFlow", "React", "FastAPI", "Vector DB", "NLP"],
     category: "AI/ML",
     features: [
