@@ -1,7 +1,85 @@
 export const projectsData = [
   {
+    title: "Autonomous SRE Platform",
+    description: "An AI that monitors production systems 24/7 and autonomously fixes incidents — no human SRE engineer needed.",
+    fullDescription: "A fully autonomous Site Reliability Engineering platform powered by LLMs that monitors application health 24/7, detects anomalies, diagnoses root causes, and auto-resolves incidents without any human intervention. Built to replace repetitive SRE tasks and reduce MTTR to near-zero.",
+    image: "/lovable-uploads/blinkwall-project.png",
+    technologies: ["Python", "LLMs", "Docker", "Kubernetes", "Azure", "REST APIs", "Monitoring", "Automation"],
+    category: "AI/ML",
+    features: [
+      "24/7 autonomous application monitoring",
+      "LLM-powered root cause analysis",
+      "Auto-remediation of production incidents",
+      "Real-time alerting and incident reporting",
+      "Zero human intervention for common failure patterns",
+      "Integration with cloud infrastructure"
+    ],
+    challenges: [
+      "Building reliable autonomous decision-making for production systems",
+      "Minimizing false positives in anomaly detection",
+      "Ensuring safe auto-remediation without causing cascading failures"
+    ],
+    outcomes: [
+      "Replaces repetitive SRE workload with autonomous AI",
+      "Near-zero MTTR for common incident patterns",
+      "Production-grade monitoring with intelligent auto-fix"
+    ]
+  },
+  {
+    title: "DataSpine — Marine Science AI Platform",
+    description: "A full platform for marine scientists to identify new species, match DNA sequences, and collaborate globally.",
+    fullDescription: "DataSpine is a comprehensive AI-powered platform built specifically for marine scientists. It enables real-time species identification from images using computer vision, DNA sequence matching, and a global collaboration network connecting marine researchers worldwide. Built to accelerate marine biodiversity research.",
+    image: "/lovable-uploads/blinkwall-project.png",
+    technologies: ["Python", "TensorFlow", "Computer Vision", "React", "Node.js", "MongoDB", "DNA Analysis", "REST APIs"],
+    category: "AI/ML",
+    features: [
+      "AI-powered species identification from photos",
+      "DNA sequence matching and comparison engine",
+      "Global scientist collaboration and networking platform",
+      "Marine biodiversity database with search",
+      "Real-time image analysis and classification",
+      "Research publication and data sharing tools"
+    ],
+    challenges: [
+      "Training accurate species identification models on limited marine datasets",
+      "Building DNA matching algorithms with high precision",
+      "Designing a platform usable by non-technical marine scientists"
+    ],
+    outcomes: [
+      "End-to-end platform for marine biodiversity research",
+      "Accelerated species identification and cataloguing",
+      "Connected marine researchers across institutions globally"
+    ]
+  },
+  {
+    title: "Noether — AI Study Companion",
+    description: "A complete AI-powered study companion for students and professionals — built to actually work, not just demo.",
+    fullDescription: "Noether is a full-featured AI study companion that helps students and professionals learn faster and smarter. Built with LLMs and RAG architecture, it understands documents, answers questions, creates study plans, generates quizzes, and adapts to individual learning styles. Named after Emmy Noether, the mathematician.",
+    image: "/lovable-uploads/blinkwall-project.png",
+    technologies: ["Python", "LLMs", "RAG", "TensorFlow", "React", "FastAPI", "Vector DB", "NLP"],
+    category: "AI/ML",
+    features: [
+      "LLM-powered document understanding and Q&A",
+      "Personalized study plan generation",
+      "Automatic quiz and flashcard creation",
+      "RAG-based knowledge retrieval from uploaded materials",
+      "Progress tracking and learning analytics",
+      "Multi-subject support for students and professionals"
+    ],
+    challenges: [
+      "Building accurate RAG pipeline for diverse document types",
+      "Personalizing content to individual learning styles",
+      "Maintaining context across long study sessions"
+    ],
+    outcomes: [
+      "Complete AI study assistant from document to quiz",
+      "Significant reduction in study time through intelligent summarization",
+      "Adaptive learning experience for diverse users"
+    ]
+  },
+  {
     title: "BlinkWall - Ephemeral Message Board",
-    description: "A full-stack MERN social application designed as an exclusive note-sharing platform for the Karunya University community with secure Google OAuth 2.0 authentication.",
+    description: "An exclusive ephemeral message board for Karunya University — notes disappear after 24 hours, restricted to @karunya.edu emails only.",
     fullDescription: "BlinkWall is a full-stack MERN (MongoDB, Express, React, Node.js) social application built from scratch as an exclusive note-sharing platform for the Karunya University community. By leveraging a custom Google OAuth 2.0 strategy with Passport.js, it ensures that only users with a valid @karunya.edu.in (student) or @karunya.edu (faculty) email can sign up. The app delivers a secure, performant, and modern web application that manages user authentication, profile onboarding, and real-time CRUD operations for short-form notes called 'Blinks'.",
     image: "/lovable-uploads/blinkwall-project.png",
     technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Passport.js", "Google OAuth 2.0", "Framer Motion", "Bootstrap", "Axios", "Mongoose"],
@@ -92,7 +170,7 @@ export const projectsData = [
   },
   {
     title: "Mine Rescuing Assistant Rover",
-    description: "An autonomous 6x6 rover designed for mine rescue operations that monitors environment and releases oxygen at target positions.",
+    description: "A fully autonomous 6x6 rover that navigates mine environments, monitors conditions, and releases oxygen at target rescue positions.",
     fullDescription: "A mine rescuing assistant rover which helps in the mine rescue operations where this rover is totally autonomous, 6x6 rover wheelbase which monitors the environment and releases oxygen once it reaches its target position.",
     image: "/lovable-uploads/1a08d54e-00c2-420d-8baa-35b92015d0a8.png",
     technologies: ["Arduino", "Raspberry Pi", "Sensors", "GPS", "Autonomous Navigation", "Robotics"],
@@ -150,7 +228,7 @@ export const projectsData = [
   },
   {
     title: "Diabetes Prediction Model",
-    description: "Developed a diabetes prediction model using AI, leveraging machine learning algorithms for early diagnosis and healthcare decision-making.",
+    description: "Accessible ML-based risk screening tool for early diabetes detection — built to help everyone, not just healthcare professionals.",
     fullDescription: "Developed a diabetes prediction model using AI, leveraging machine learning algorithms for early diagnosis. Improved prediction accuracy through data preprocessing and feature engineering, enhancing healthcare decision-making and preventive care.",
     image: "/lovable-uploads/23468081-6d1b-44a7-85a8-c896a01ace74.png",
     technologies: ["Python", "Scikit-Learn", "Pandas", "NumPy", "Machine Learning", "Healthcare Analytics"],
@@ -179,7 +257,7 @@ export const projectsData = [
   },
   {
     title: "Bug Detection and Fixing Model using LLM",
-    description: "An AI-powered tool that analyzes Python code to detect and fix bugs in real-time using a lightweight LLM with user-friendly interface.",
+    description: "LLM-powered engine that detects syntax errors and logical flaws in Python code and suggests intelligent fixes automatically.",
     fullDescription: "An AI-powered tool that analyzes Python code to detect and fix bugs in real-time using a lightweight LLM. It operates locally with a user-friendly interface, enhancing development efficiency and accessibility for developers at all levels.",
     image: "/lovable-uploads/2702d2da-e83c-4818-837e-1cd6e9c2f240.png",
     technologies: ["Python", "LLM", "Natural Language Processing", "Code Analysis", "AI", "Software Development"],
@@ -208,7 +286,7 @@ export const projectsData = [
   },
   {
     title: "Soil Classification and Prediction",
-    description: "An AI-powered soil analysis system that predicts soil type from photo samples and provides agricultural recommendations for optimal crop growth.",
+    description: "AI system that identifies soil type from a single photo and recommends the best crops, fertilizers, and fertility improvements.",
     fullDescription: "An intelligent soil classification and prediction system that uses deep learning to analyze soil photo samples and detect soil types through comprehensive analysis. After analyzing the soil, the AI model provides valuable insights including precautionary measures, best plants that grow in that specific soil type, and detailed recommendations on how to make the soil more fertile and suitable for agriculture.",
     image: "/lovable-uploads/a19b742e-497b-4b0c-85b9-3429f8840705.png",
     technologies: ["Python", "TensorFlow", "Computer Vision", "Deep Learning", "Image Processing", "Agricultural AI"],

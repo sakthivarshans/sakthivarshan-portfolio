@@ -1,5 +1,3 @@
-import { ArrowUpRight } from "lucide-react";
-
 const Experience = () => {
   const experiences = [
     {
@@ -7,7 +5,7 @@ const Experience = () => {
       company: "Code Craft Club",
       location: "Karunya University",
       period: "Aug 2025 – Present",
-      description: "Leading a community of innovators passionate about IoT, embedded systems, 3D modeling, and web development. Organizing hands-on training sessions and mentoring juniors in hardware design and system integration.",
+      description: "Lead technical workshops, hackathons, and coding events for 100+ student members. Mentoring juniors in AI/ML, IoT, and embedded systems — building a culture of real-world builders, not just learners.",
       tags: ["Leadership", "IoT"],
     },
     {
@@ -15,7 +13,7 @@ const Experience = () => {
       company: "Intel Corporation",
       location: "Industry Training",
       period: "Feb – Mar 2025",
-      description: "Developed AI-based bug detection model improving software reliability by automatically scanning code to find bugs and vulnerabilities using machine learning.",
+      description: "Engineered an LLM-powered bug detection and auto-fix engine that identifies syntax errors, type mismatches, and logical flaws in Python codebases — automating error resolution for real-world programming scenarios.",
       tags: ["AI/ML", "Bug Detection"],
     },
     {
@@ -23,7 +21,7 @@ const Experience = () => {
       company: "Internship Studio",
       location: "Remote",
       period: "Jul – Aug 2024",
-      description: "Developed real-time video analysis project using Python and OpenCV to process live video streams with object detection and motion tracking.",
+      description: "Developed a real-time video analysis pipeline using Python and OpenCV — object detection, motion tracking, and live stream processing on edge devices.",
       tags: ["Python", "OpenCV"],
     },
     {
@@ -31,7 +29,7 @@ const Experience = () => {
       company: "Ediglobe Services",
       location: "Remote",
       period: "Jun – Aug 2024",
-      description: "Built Medical AI project using TensorFlow to improve diagnostic accuracy, training models on medical imaging data to assist healthcare professionals.",
+      description: "Built a Medical AI diagnostic model using TensorFlow trained on medical imaging data to assist healthcare professionals with improved diagnostic accuracy.",
       tags: ["TensorFlow", "Medical AI"],
     },
     {
@@ -39,7 +37,7 @@ const Experience = () => {
       company: "Cisco Networking",
       location: "Virtual",
       period: "May – Jul 2024",
-      description: "Hands-on project using Packet Tracer for firewalls and threat detection, configuring firewall rules and real-time security monitoring.",
+      description: "Designed and simulated secure enterprise network architectures using Cisco Packet Tracer — firewalls, IDS/IPS, VPNs, encryption, and incident response playbooks.",
       tags: ["Security", "Networking"],
     },
     {
@@ -47,7 +45,7 @@ const Experience = () => {
       company: "Kodacy",
       location: "On-site",
       period: "Dec 2023",
-      description: "Arduino-based automation project focusing on optimizing embedded hardware, programming microcontrollers for efficient task automation.",
+      description: "Arduino-based embedded automation — programming microcontrollers for task automation and hardware-in-the-loop testing.",
       tags: ["Arduino", "Robotics"],
     },
   ];
@@ -63,13 +61,12 @@ const Experience = () => {
               <span className="text-sm text-muted-foreground uppercase tracking-wider">Experiences</span>
             </div>
             <h2 className="font-display text-4xl lg:text-5xl font-medium text-foreground">
-              Explore My<br />Design Journey
+              My Journey<br />So Far
             </h2>
           </div>
           <div className="flex flex-col justify-end animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             <p className="text-muted-foreground">
-              Over the past 4+ years, I've had the opportunity to work on a wide range of projects, 
-              collaborating with diverse teams and clients to bring creative visions to life.
+              From embedded hardware to LLMs — every internship added a new layer to how I think about building AI products.
             </p>
           </div>
         </div>

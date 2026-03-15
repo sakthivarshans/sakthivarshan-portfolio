@@ -97,7 +97,7 @@ const Contact = () => {
             Get In Touch
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            Have a question or want to collaborate? Feel free to reach out through any of these channels.
+            Currently open to AI Engineer, ML Engineer, and AI Architect roles — internships, full-time, or research collaborations. Based in India, open to remote worldwide. Or just want to build something together? Reach out.
           </p>
         </div>
 
