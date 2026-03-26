@@ -40,13 +40,11 @@ const About = () => {
 
           {/* Right Content */}
           <div className="space-y-8 animate-slide-in-right">
-            {/* Profile Image */}
-            <div className="rounded-2xl overflow-hidden bg-background shadow-soft">
-              <img
-                src="/lovable-uploads/sakthivarshan-profile.png"
-                alt="Sakthivarshan working"
-                className="w-full h-64 object-cover object-[center_20%] grayscale"
-              />
+            {/* Logo */}
+            <div className="rounded-2xl overflow-hidden bg-background shadow-soft flex items-center justify-center h-64">
+              <span className="font-display text-5xl lg:text-6xl font-semibold text-foreground tracking-tight">
+                Sakthivarshan
+              </span>
             </div>
 
             {/* Education Card */}
