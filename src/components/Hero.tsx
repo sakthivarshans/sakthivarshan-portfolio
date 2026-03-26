@@ -3,7 +3,7 @@ import { ArrowDown, Github, Linkedin, Mail, ArrowUpRight } from "lucide-react";
 
 const Hero = () => {
   const [displayText, setDisplayText] = useState("");
-  const fullText = "Hi, I'm Sakthi.";
+  const fullText = "Hi, I'm Sakthivarshan.";
 
   useEffect(() => {
     let index = 0;
