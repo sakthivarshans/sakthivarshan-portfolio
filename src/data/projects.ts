@@ -1,5 +1,35 @@
 export const projectsData = [
   {
+    title: "Syndra — Small Language Model",
+    description: "A compact transformer-based language model built entirely from scratch — no pretrained weights, no APIs, no cloud. Just raw deep learning on a 4GB GPU.",
+    fullDescription: "Syndra is a compact, transformer-based Small Language Model (SLM) built entirely from scratch without pretrained weights, APIs, or cloud usage. Designed to demonstrate end-to-end LLM development, Syndra performs next-token prediction to generate coherent English text and narratives while operating under strict hardware constraints (4GB GPU). A 16M parameter model achieving ~1.79 validation loss, reduced from ~184MB to 30MB using FP16 optimization.",
+    image: "/lovable-uploads/syndra-project.png",
+    technologies: ["Python", "PyTorch", "Transformers", "tiktoken", "TinyStories", "CUDA", "Deep Learning", "NLP"],
+    category: "AI/ML",
+    features: [
+      "Custom-built transformer decoder architecture (4 layers, embedding dim 256)",
+      "Vocabulary size: 50,257 (GPT-2 BPE tokenizer)",
+      "Context window: 256 tokens",
+      "End-to-end training pipeline (data → training → inference → export)",
+      "Autoregressive next-token text generation",
+      "Lightweight 30MB FP16 optimized model",
+      "Efficient training on low-resource hardware (4GB VRAM)",
+      "Configurable architecture for size-performance trade-offs"
+    ],
+    challenges: [
+      "Training a language model from scratch without pretrained initialization",
+      "Optimizing model performance under limited GPU memory constraints",
+      "Achieving coherent text generation with a small parameter budget",
+      "Balancing model size, training time, and output quality"
+    ],
+    outcomes: [
+      "Trained 16M parameter model achieving ~1.79 validation loss",
+      "Generates grammatically correct and structured narratives",
+      "Reduced model size from ~184MB to 30MB using optimization techniques",
+      "Proved feasibility of building LLMs under constrained environments"
+    ]
+  },
+  {
     title: "Autonomous SRE Platform",
     description: "An AI that monitors production systems 24/7 and autonomously fixes incidents — no human SRE engineer needed.",
     fullDescription: "A fully autonomous Site Reliability Engineering platform powered by LLMs that monitors application health 24/7, detects anomalies, diagnoses root causes, and auto-resolves incidents without any human intervention. Built to replace repetitive SRE tasks and reduce MTTR to near-zero.",
