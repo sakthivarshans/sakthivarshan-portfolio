@@ -1,5 +1,39 @@
 export const projectsData = [
   {
+    title: "RepoSense — AI Codebase Intelligence",
+    description: "AI-powered platform that turns any public GitHub repository into a complete, interactive intelligence report in under 30 seconds.",
+    fullDescription: "RepoSense is an AI-powered codebase intelligence platform that transforms any public GitHub repository into a complete, interactive intelligence report in under 30 seconds. Built entirely using IBM Bob as the development partner, RepoSense eliminates the 2 to 5 day onboarding bottleneck every developer faces when encountering an unfamiliar codebase. Paste a GitHub URL, and RepoSense fetches the entire repository, reads every meaningful file, and delivers five outputs simultaneously — architecture map, complexity heatmap, plain English summary, structured onboarding guide, and a full context-aware chat interface. Powered by Groq-accelerated LLaMA 3.3 70B inference with Firestore caching for sub-second repeat queries.",
+    image: "/lovable-uploads/reposense-project.png",
+    liveUrl: "https://reposense-one.vercel.app/",
+    technologies: ["React", "Vite", "Tailwind CSS", "D3.js", "FastAPI", "Python", "Groq", "LLaMA 3.3 70B", "Firebase", "Firestore", "Google Auth", "GitHub REST API"],
+    category: "AI/ML",
+    features: [
+      "Interactive D3.js force-directed architecture map with drag, zoom, and click-to-chat",
+      "File-level complexity heatmap scoring every file from 0 to 10",
+      "Plain English repository summary covering purpose, tech stack, and audience",
+      "AI-generated structured onboarding guide written like a senior engineer",
+      "Full context-aware chat interface that has read every file in the repo",
+      "Google Authentication with secure Firestore credential storage",
+      "Intelligent file chunker that filters and structures files within AI context limits",
+      "Firestore caching for sub-second repeat queries",
+      "Deployed full-stack app with a dark premium UI"
+    ],
+    challenges: [
+      "Fetching, filtering, and chunking 200+ file repos within AI token limits without losing context",
+      "Designing prompts that produce consistent structured JSON for D3 visualization",
+      "Building a meaningful architecture graph without runtime dependency resolution",
+      "Balancing Groq free-tier rate limits against parallel AI tasks per analysis",
+      "Adding Google Auth as a non-breaking layer over an existing analysis pipeline"
+    ],
+    outcomes: [
+      "Reduces onboarding time from 2-5 days to under 30 seconds",
+      "Successfully analyzes Python, JavaScript, TypeScript, Java, Go, and Rust codebases",
+      "Generates architecture maps with up to 12 nodes and 20 dependency edges",
+      "Produces risk-ranked heatmaps identifying the top 15 highest-risk files",
+      "Entire project scaffolded, built, and documented using IBM Bob"
+    ]
+  },
+  {
     title: "Syndra — Small Language Model",
     description: "A compact transformer-based language model built entirely from scratch — no pretrained weights, no APIs, no cloud. Just raw deep learning on a 4GB GPU.",
     fullDescription: "Syndra is a compact, transformer-based Small Language Model (SLM) built entirely from scratch without pretrained weights, APIs, or cloud usage. Designed to demonstrate end-to-end LLM development, Syndra performs next-token prediction to generate coherent English text and narratives while operating under strict hardware constraints (4GB GPU). A 16M parameter model achieving ~1.79 validation loss, reduced from ~184MB to 30MB using FP16 optimization.",

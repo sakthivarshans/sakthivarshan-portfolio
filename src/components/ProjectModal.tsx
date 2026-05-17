@@ -1,4 +1,5 @@
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { ArrowUpRight } from "lucide-react";
 
 interface Project {
   title: string;
@@ -7,6 +8,7 @@ interface Project {
   image: string;
   technologies: string[];
   category: string;
+  liveUrl?: string;
   features?: string[];
   challenges?: string[];
   outcomes?: string[];
