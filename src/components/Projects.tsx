@@ -10,6 +10,7 @@ interface Project {
   image: string;
   technologies: string[];
   category: string;
+  liveUrl?: string;
   features?: string[];
   challenges?: string[];
   outcomes?: string[];
