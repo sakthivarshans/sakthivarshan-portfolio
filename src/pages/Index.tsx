@@ -30,7 +30,7 @@ const Index = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <span className="font-display text-2xl font-semibold">Sakthivarshan</span>
-              <p className="text-background/60 mt-1">AI & Robotics Developer</p>
+              <p className="text-background/60 mt-1">AI & IoT/ESH Developer</p>
             </div>
             <div className="flex items-center gap-4">
               <a
