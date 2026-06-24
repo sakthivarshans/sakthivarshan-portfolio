@@ -9,6 +9,8 @@ interface Project {
   technologies: string[];
   category: string;
   liveUrl?: string;
+  githubUrl?: string;
+  datasetUrl?: string;
   features?: string[];
   challenges?: string[];
   outcomes?: string[];
