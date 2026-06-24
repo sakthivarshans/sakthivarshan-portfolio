@@ -32,17 +32,41 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
           <DialogTitle className="font-display text-2xl font-medium text-foreground mb-4">
             {project.title}
           </DialogTitle>
-          {project.liveUrl && (
-            <a
-              href={project.liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 self-start px-5 py-2 bg-foreground text-background rounded-full text-sm font-medium hover:bg-secondary transition-colors duration-300 w-fit"
-            >
-              Try it
-              <ArrowUpRight size={16} />
-            </a>
-          )}
+          <div className="flex flex-wrap gap-2">
+            {project.liveUrl && (
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 self-start px-5 py-2 bg-foreground text-background rounded-full text-sm font-medium hover:bg-secondary transition-colors duration-300 w-fit"
+              >
+                Try it
+                <ArrowUpRight size={16} />
+              </a>
+            )}
+            {project.datasetUrl && (
+              <a
+                href={project.datasetUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 self-start px-5 py-2 bg-tertiary text-foreground border border-border rounded-full text-sm font-medium hover:border-foreground transition-colors duration-300 w-fit"
+              >
+                Dataset
+                <ArrowUpRight size={16} />
+              </a>
+            )}
+            {project.githubUrl && (
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 self-start px-5 py-2 bg-tertiary text-foreground border border-border rounded-full text-sm font-medium hover:border-foreground transition-colors duration-300 w-fit"
+              >
+                GitHub
+                <ArrowUpRight size={16} />
+              </a>
+            )}
+          </div>
         </DialogHeader>
         
         <div className="space-y-8">
