@@ -34,6 +34,81 @@ export const projectsData = [
     ]
   },
   {
+    title: "Wanderon — AI Travel Planning Assistant",
+    description: "An AI-powered travel planning platform with Telegram integration that automates the entire trip-planning process — from destinations to budgets.",
+    fullDescription: "Wanderon is an AI-powered travel planning platform that automates the entire trip-planning process from destination selection to budget estimation. Designed as a standalone application with Telegram integration, Wanderon acts as a personal AI travel assistant capable of generating complete travel plans without requiring external travel agencies, guides, or manual research. Users simply provide their travel preferences, destinations, dates, and budget constraints, and Wanderon generates a structured itinerary including transportation options, accommodation recommendations, daily activities, cost breakdowns, and travel logistics. The application runs on the user's system while remaining accessible through Telegram, enabling seamless trip planning from any device.",
+    image: "/placeholder.svg",
+    githubUrl: "https://github.com/sakthivarshans/Wanderon",
+    technologies: ["Python", "Telegram Bot API", "LLMs", "Prompt Engineering", "Travel Data APIs", "Automation Pipelines", "REST APIs", "JSON Processing", "GitHub"],
+    category: "AI/ML",
+    features: [
+      "End-to-end AI trip planning from destination research to final itinerary generation",
+      "Telegram bot interface for remote interaction and travel planning",
+      "Personalized travel itineraries based on budget, duration, interests, and preferences",
+      "Intelligent transportation planning including flights, trains, buses, and local transit",
+      "Accommodation recommendation engine with budget-aware filtering",
+      "Day-wise activity scheduling with optimized travel flow",
+      "Automated budget breakdown covering transport, stays, food, and activities",
+      "Multi-destination trip support with route optimization",
+      "Real-time travel information aggregation from multiple sources",
+      "Standalone architecture allowing local execution and customization"
+    ],
+    challenges: [
+      "Converting vague user travel preferences into structured trip-planning requirements",
+      "Balancing itinerary quality against budget and time constraints",
+      "Coordinating transportation, accommodations, and activities into a coherent schedule",
+      "Designing prompts capable of generating realistic and geographically feasible plans",
+      "Maintaining conversational context across Telegram interactions",
+      "Automating travel planning workflows traditionally requiring hours of manual research"
+    ],
+    outcomes: [
+      "Reduces trip planning time from several hours to a few minutes",
+      "Generates complete travel plans including itinerary, transport, accommodation, and budgeting",
+      "Supports personalized travel recommendations based on user preferences",
+      "Provides remote accessibility through Telegram without requiring direct application access",
+      "Automates multiple stages of travel research and decision-making",
+      "Demonstrates practical AI agent workflows for real-world travel planning"
+    ]
+  },
+  {
+    title: "Indian Multilingual TTS Dataset Pipeline",
+    description: "A large-scale speech dataset generation framework producing 700+ minutes of curated English and Tamil TTS data — published on Hugging Face.",
+    fullDescription: "The Indian Multilingual TTS Dataset Pipeline is a large-scale speech dataset generation and curation framework designed to automate the creation of high-quality text-to-speech training datasets in English and Tamil. The system streamlines the traditionally labor-intensive dataset creation process by automating audio collection, voice activity detection (VAD), transcription, emotion tagging, quality assessment, and dataset curation. Built to support researchers, developers, and voice AI practitioners, the pipeline produces structured datasets suitable for training modern neural TTS and voice-cloning models. The resulting dataset contains over 700 minutes of curated multilingual speech data and is publicly available through Hugging Face.",
+    image: "/placeholder.svg",
+    datasetUrl: "https://huggingface.co/datasets/sakthivarshans/indian-tts-dataset",
+    githubUrl: "https://github.com/sakthivarshans/TTS-Dataset-Script",
+    technologies: ["Python", "Sarvam AI", "Voice Activity Detection", "Speech Processing", "Audio Signal Processing", "Hugging Face Datasets", "Data Engineering", "Metadata Generation", "Quality Filtering", "Machine Learning"],
+    category: "AI/ML",
+    features: [
+      "Automated audio collection and preprocessing pipeline",
+      "Voice Activity Detection (VAD) based speech segmentation",
+      "Automated transcription using Sarvam AI speech models",
+      "Emotion and speaking-style tagging for expressive TTS training",
+      "Audio quality assessment and filtering workflows",
+      "Human review and verification pipeline for dataset refinement",
+      "Automatic metadata generation and dataset organization",
+      "Dataset statistics generation and quality reporting",
+      "Multilingual support for English and Tamil speech data",
+      "Hugging Face dataset publishing and distribution workflow"
+    ],
+    challenges: [
+      "Processing large volumes of raw audio with varying recording quality",
+      "Eliminating silence, noise, and unusable speech segments automatically",
+      "Maintaining transcription accuracy across multilingual content",
+      "Designing scalable quality-control mechanisms without excessive manual review",
+      "Creating reliable emotion and speaking-style labels for expressive voice synthesis",
+      "Structuring datasets in formats compatible with modern TTS training frameworks"
+    ],
+    outcomes: [
+      "Generated and curated over 700 minutes of multilingual speech data",
+      "Significantly reduced manual effort required for TTS dataset creation",
+      "Produced training-ready datasets for neural TTS and voice cloning systems",
+      "Automated multiple stages of the speech data preparation lifecycle",
+      "Published an openly accessible dataset for the speech AI community",
+      "Established a reusable framework for future multilingual dataset generation projects"
+    ]
+  },
+  {
     title: "Syndra — Small Language Model",
     description: "A compact transformer-based language model built entirely from scratch — no pretrained weights, no APIs, no cloud. Just raw deep learning on a 4GB GPU.",
     fullDescription: "Syndra is a compact, transformer-based Small Language Model (SLM) built entirely from scratch without pretrained weights, APIs, or cloud usage. Designed to demonstrate end-to-end LLM development, Syndra performs next-token prediction to generate coherent English text and narratives while operating under strict hardware constraints (4GB GPU). A 16M parameter model achieving ~1.79 validation loss, reduced from ~184MB to 30MB using FP16 optimization.",
