@@ -1,4 +1,4 @@
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { ArrowUpRight } from "lucide-react";
 
 interface Project {
@@ -32,6 +32,9 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
           <DialogTitle className="font-display text-2xl font-medium text-foreground mb-4">
             {project.title}
           </DialogTitle>
+          <DialogDescription className="sr-only">
+            Detailed information about the {project.title} project.
+          </DialogDescription>
           <div className="flex flex-wrap gap-2">
             {project.liveUrl && (
               <a
