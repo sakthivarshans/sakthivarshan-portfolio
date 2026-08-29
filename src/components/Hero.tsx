@@ -51,7 +51,7 @@ const Hero = () => {
                 <ArrowUpRight size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </a>
               <a
-                href="https://flowcv.com/resume/r7hsv86ut1k8"
+                href="https://flowcv.com/resume/fs2e4bo17c17"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-4 border border-foreground text-foreground rounded-full hover:bg-foreground hover:text-background transition-all duration-300 font-medium group"
